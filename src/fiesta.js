@@ -25,8 +25,12 @@ export const fiesta = {
   ],
   representative: ['Genoveva Salazar', 'Media hora de Banda'],
   donors: [
+    ['Uldarica ARCE UZURIAGA', 'Local'],
+    ['Luz CASTILLA VARGAS', 'Local'],
     ['Fran GARCIA GEGERO', 'Artista Sorpresa'],
-    ['Martin Antonio BAÑON ESPINOZA', 'Arreglo de Anda'],
+    ['Rosa ARCE UZURIAGA y esposo Bernabe ACOSTA', 'Mayordomos de Misa'],
+    ['Martin Antonio BAÑON ESPINOZA', 'Mayordomo de Anda'],
+    ['Henry VENTOCILLA FIGUEROA', 'Vaca Loca'],
     ['Maribel NAVARRO ARCE', 'S/.1,000.00'],
     ['Jose ACOSTA ARCE', 'S/. 200.00'],
     ['Ruben URBIZAGASTEGUI PACHECO', 'S/. 200.00'],
@@ -37,9 +41,6 @@ export const fiesta = {
     ['Flavia ALVARADO ARBIZA', 'S/. 100.00'],
     ['Susana ROQUE VILLAREAL', 'S/. 100.00'],
     ['Rosario ZEVALLOS', 'S/. 100.00'],
-    ['Henry VENTOCILLA FIGUEROA', 'Vaca Loca'],
-    ['Rosa ARCE UZURIAGA y esposo Bernabe ACOSTA', 'Mayordomos de Misa'],
-    ['Edgail BARRERA VENTOCILLA', 'Negritos de Ahuas'],
   ],
   program: [
     {
