@@ -17,7 +17,7 @@ export const fiesta = {
   drinks: 'Asi mismo no faltara las ricas cervezas, gaseosas y aguas bien heladas',
   rsvpUrl: null,
   mayordomos: [
-    ['Christian Tony URBIZAGASTEGUI CASTILLO', 'Una hora de Banda.'],
+    ['Christian Tony URBIZAGASTEGUI CASTILLA', 'Una hora de Banda.'],
     ['Indelicio URBIZAGASTEGUI BARRERA', 'Una hora de Banda.'],
     ['Michael ACOSTA ARCE', 'Una hora de Banda.'],
     ['Ricardo PEREZ URBIZAGASTEGUI', 'Una hora de Banda.'],
