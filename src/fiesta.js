@@ -1,4 +1,5 @@
 // Contenido del PDF «GRAN FIESTA PATRONAL EN LIMA».
+// Nombres y aportes ajustados según las últimas correcciones del cliente.
 // El año 2026 se deduce de sábado 21 / domingo 22 de noviembre.
 export const fiesta = {
   title: 'Gran Fiesta Patronal en Lima · San Martín de Porres',
@@ -37,7 +38,7 @@ export const fiesta = {
     ['Susana ROQUE VILLAREAL', 'S/. 100.00'],
     ['Rosario ZEVALLOS', 'S/. 100.00'],
     ['Henry VENTOCILLA FIGUEROA', 'Vaca Loca'],
-    ['Rosa ARCE UZURIAGA y esposo', 'Mayordomo de Misa'],
+    ['Rosa ARCE UZURIAGA y esposo Bernabe ACOSTA', 'Mayordomos de Misa'],
     ['Edgail BARRERA VENTOCILLA', 'Negritos de Ahuas'],
   ],
   program: [
