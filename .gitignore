@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.reference-backup/
+.openai/*.tar.gz
+.openai/*.tgz
+.openai/*.log
+.openai/*.pid

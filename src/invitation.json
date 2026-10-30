@@ -1,0 +1,1901 @@
+{
+  "width": 1366,
+  "cover": {
+    "id": "portada",
+    "label": "Portada",
+    "height": 2409,
+    "background": "#fbf7f0",
+    "elements": [
+      {
+        "id": "LBpgbThGt2jBNSLz",
+        "x": -120.72419658195906,
+        "y": -16.67533175290896,
+        "width": 1607.4483931639172,
+        "height": 2880.283064706024,
+        "kind": "image",
+        "src": "/reference/3b24c422c6f9a6c0a00f2a2a217eecf2.jpg",
+        "crop": {
+          "x": -1361.90216785866,
+          "y": 0,
+          "width": 4331.252728881239,
+          "height": 2880.283064706024
+        }
+      },
+      {
+        "id": "LBj23LH6h32YLvD0",
+        "x": 36.81748523923045,
+        "y": 884.1687598917308,
+        "width": 1292.365029521539,
+        "height": 893.0354103152754,
+        "kind": "image",
+        "src": "/reference/bc20bb781a25624e4b25da7f8e666139.png",
+        "crop": {
+          "x": -16.86807171237956,
+          "y": 0,
+          "width": 1326.1011729462982,
+          "height": 893.0354103152754
+        }
+      },
+      {
+        "id": "LBflM1L0FTWFkcKV",
+        "x": 566.6717889403981,
+        "y": 1337.0734743939292,
+        "width": 232.65642211920397,
+        "height": 232.65642211920397,
+        "kind": "shape",
+        "viewWidth": 64,
+        "viewHeight": 64,
+        "paths": [
+          {
+            "path": "M32 0A32 32 0 1 0 32 64A32 32 0 1 0 32 0Z",
+            "src": "/reference/3a2419a3d409ce2fae05018888a1ef45.png",
+            "crop": {
+              "x": -2.8329856078659787,
+              "y": -2.8329856078659645,
+              "width": 69.02854945396207,
+              "height": 69.02854945396207
+            }
+          }
+        ]
+      },
+      {
+        "id": "LBWH6tCHXSDmnxBv",
+        "x": 746.4613647048923,
+        "y": 1513.9866743744385,
+        "width": 67.96463080893572,
+        "height": 69.61805972746298,
+        "kind": "image",
+        "src": "/reference/766ea74c1273d40c607e00c35ab24cdc.png",
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 67.96463080893572,
+          "height": 69.61805972746298
+        }
+      },
+      {
+        "id": "LBylFCpq4DBsmH2N",
+        "x": 500.0900215689587,
+        "y": 1139.577776062989,
+        "width": 365.676121458884,
+        "height": 152.83758679236408,
+        "kind": "image",
+        "src": "/reference/b53078da90732cddc8a71bd6b60ec2e8.png",
+        "crop": {
+          "x": 0,
+          "y": -6.3569831886016885,
+          "width": 365.676121458884,
+          "height": 165.55155316956746
+        }
+      },
+      {
+        "id": "LB34hY84BKcW89jj",
+        "x": 233.98832611279352,
+        "y": 1015.9832842474912,
+        "width": 898.023347774413,
+        "height": 100.05512899940645,
+        "kind": "text",
+        "text": "DIRECCIÓN DE AVIACIÓN POLICIAL\nDIVISIÓN DE MANTENIMIENTO AÉREO",
+        "style": {
+          "fontSize": "33.3332px",
+          "color": "#e2cea2",
+          "letterSpacing": "0.055em",
+          "lineHeight": "1.347em",
+          "textAlign": "center",
+          "fontFamily": "Tex Gyre Termes"
+        },
+        "lineLengths": [
+          31,
+          32
+        ],
+        "textWidth": 839.296875,
+        "textHeight": 93.51199755,
+        "lineStyles": [
+          {
+            "fontFamily": "Cinzel",
+            "fontSize": "41.3335px",
+            "fontWeight": "bold"
+          },
+          {}
+        ]
+      },
+      {
+        "id": "LB8zJcBsFH0Z7VhR",
+        "x": 473.22211817649156,
+        "y": 1594.9122169269187,
+        "width": 419.4119282438183,
+        "height": 55.638493928944364,
+        "kind": "text",
+        "text": "Da click aquí para ver ",
+        "style": {
+          "fontSize": "43.4898px",
+          "color": "#ffffff",
+          "lineHeight": "1.2em",
+          "textAlign": "center",
+          "fontFamily": "Tex Gyre Termes"
+        },
+        "lineLengths": [
+          24
+        ],
+        "textWidth": 391.984375,
+        "textHeight": 52
+      },
+      {
+        "id": "LBZKCjyWpPqq1T7Y",
+        "x": 442.2932678854618,
+        "y": 1650.751459202807,
+        "width": 481.2696288258778,
+        "height": 63.12829118860995,
+        "kind": "text",
+        "text": "LA INVITACIÓN",
+        "style": {
+          "fontSize": "49.7025px",
+          "color": "#ffffff",
+          "letterSpacing": "0.13em",
+          "lineHeight": "1.2em",
+          "textAlign": "center",
+          "fontFamily": "Tex Gyre Termes"
+        },
+        "lineLengths": [
+          14
+        ],
+        "textWidth": 449.796875,
+        "textHeight": 59
+      }
+    ],
+    "hotspot": {
+      "x": 420,
+      "y": 1300,
+      "width": 530,
+      "height": 455,
+      "action": "open",
+      "label": "Abrir la invitación"
+    }
+  },
+  "sections": [
+    {
+      "id": "seccion-1",
+      "label": "Presentación y música",
+      "height": 2478,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBfQxqVjjj9SkH64",
+          "x": 5.684341886080801e-13,
+          "y": 2445.839495953923,
+          "width": 1365.9999999999998,
+          "height": 45.11209012276629,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": -124.89112508702544,
+            "y": -92.22940114202824,
+            "width": 1615.782250174051,
+            "height": 137.3414912647943
+          }
+        },
+        {
+          "id": "LBKDxNtrXxdBcFjd",
+          "x": 405.057167130257,
+          "y": 178.3310088165374,
+          "width": 555.8856657394869,
+          "height": 232.3373572907541,
+          "kind": "image",
+          "src": "/reference/b53078da90732cddc8a71bd6b60ec2e8.png",
+          "crop": {
+            "x": 0,
+            "y": -9.663622053834075,
+            "width": 555.8856657394869,
+            "height": 251.66460139842226
+          }
+        },
+        {
+          "id": "LBjjgfVlXy8B9M9t",
+          "x": 497.015719608218,
+          "y": 405.85836372839276,
+          "width": 850.0137040646516,
+          "height": 294.59120130902755,
+          "kind": "image",
+          "src": "/reference/3542eb0718e4f5583ba6cebc92dfaa68.png",
+          "crop": {
+            "x": -486.1654949754309,
+            "y": -361.29425253656166,
+            "width": 1336.1791990400825,
+            "height": 890.7861326933881
+          }
+        },
+        {
+          "id": "LBB9yyHkv0vGv4pY",
+          "x": 362.7217591130665,
+          "y": 1238.4358497622316,
+          "width": 640.5564817738679,
+          "height": 640.5564817738679,
+          "kind": "shape",
+          "viewWidth": 64,
+          "viewHeight": 64,
+          "paths": [
+            {
+              "path": "M32 0A32 32 0 1 0 32 64A32 32 0 1 0 32 0Z",
+              "src": "/reference/5f5902c80d61d25ac2a39767ff1eccda.png",
+              "crop": {
+                "x": -2.772171717507966,
+                "y": -2.464152637784906,
+                "width": 68.6202861958466,
+                "height": 68.6202861958466
+              }
+            }
+          ]
+        },
+        {
+          "id": "LBjRN14flCz5D3PB",
+          "x": 463.8147173980843,
+          "y": 426.66836610729155,
+          "width": 43.34424832620577,
+          "height": 192.20016134983814,
+          "kind": "text",
+          "text": "°",
+          "style": {
+            "fontSize": "240.495px",
+            "color": "#d39d26",
+            "letterSpacing": "0.003em",
+            "lineHeight": "1.3em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            2
+          ],
+          "textWidth": 64.9375,
+          "textHeight": 287.9505
+        },
+        {
+          "id": "LBXj1QvM94r2JsLs",
+          "x": 772.360229453989,
+          "y": 590.5804497505352,
+          "width": 88.984375,
+          "height": 37.3261791,
+          "kind": "text",
+          "text": "DE LA",
+          "style": {
+            "fontSize": "31.7947px",
+            "color": "#d39d26",
+            "lineHeight": "1.347em",
+            "textAlign": "center",
+            "fontFamily": "Playfair Display"
+          },
+          "lineLengths": [
+            6
+          ]
+        },
+        {
+          "id": "LBn2SCyvkfxWQ9jS",
+          "x": 494.1456879386501,
+          "y": 455.6239338391239,
+          "width": 677.7575602712072,
+          "height": 177.10392573361656,
+          "kind": "image",
+          "src": "/reference/2b0f21af5d37ef251b6d69592297a1d8.png",
+          "crop": {
+            "x": -476.7494022022411,
+            "y": -413.04184023378093,
+            "width": 1366,
+            "height": 910.6666666666665
+          }
+        },
+        {
+          "id": "LBt3dxy0hd4rn6G8",
+          "x": 311.8970540124017,
+          "y": 700.4495650374203,
+          "width": 742.2058919751966,
+          "height": 124.57467619993699,
+          "kind": "text",
+          "text": "DIVISIÓN DE\nMANTENIMIENTO AÉREO",
+          "style": {
+            "fontSize": "46.6663px",
+            "color": "#d39d26",
+            "letterSpacing": "0.03em",
+            "lineHeight": "1.13em",
+            "textAlign": "center",
+            "fontFamily": "Lora"
+          },
+          "lineLengths": [
+            12,
+            20
+          ],
+          "textWidth": 639.0860116289706,
+          "textHeight": 107.26664099999999
+        },
+        {
+          "id": "LBSZXsBGfbVD5fqV",
+          "x": 111.80338032282489,
+          "y": 405.85836372839293,
+          "width": 373.6834612383623,
+          "height": 338.43564585640604,
+          "kind": "image",
+          "src": "/reference/3542eb0718e4f5583ba6cebc92dfaa68.png",
+          "crop": {
+            "x": -76.25110089932161,
+            "y": -338.3563447438852,
+            "width": 1251.3476384855114,
+            "height": 834.2317589903408
+          }
+        },
+        {
+          "id": "LBhv6XbYLM3HkJ02",
+          "x": 194.0967517901433,
+          "y": 898.0242412373573,
+          "width": 977.8064964197143,
+          "height": 241.385488,
+          "kind": "text",
+          "text": "\"Detrás de cada aeronave policial que surca el cielo, existe un equipo de profesionales, técnicos y expertos que trabajan en silencio, con compromiso, pasión, disciplina y precisión.\"",
+          "style": {
+            "fontSize": "41.5185px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.025em",
+            "lineHeight": "1.552em",
+            "textAlign": "center",
+            "fontFamily": "Playfair Display"
+          },
+          "lineLengths": [
+            54,
+            46,
+            51,
+            33
+          ]
+        },
+        {
+          "id": "LBYwjqWV0lzHXSSy",
+          "x": 497.01571960821786,
+          "y": 2006.0184520609732,
+          "width": 364.3288848457711,
+          "height": 92.00002,
+          "reveal": true,
+          "kind": "text",
+          "text": "Dale play para\nescuchar la música",
+          "style": {
+            "fontSize": "40.0002px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1.1em",
+            "textAlign": "center",
+            "fontFamily": "Playfair Display"
+          },
+          "lineLengths": [
+            15,
+            19
+          ]
+        },
+        {
+          "id": "reproductor",
+          "kind": "music",
+          "x": 334.2276,
+          "y": 2098.0185,
+          "width": 689.9051,
+          "height": 183.1063
+        }
+      ]
+    },
+    {
+      "id": "seccion-2",
+      "label": "Invitación del anfitrión",
+      "height": 1867,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBrNT2Ns7SnJSTFY",
+          "x": 594.4624629373395,
+          "y": -432.02213876260134,
+          "width": 773.0014325679374,
+          "height": 432.88080223804496,
+          "kind": "image",
+          "src": "/reference/a9e8913111e8ef5fdd62060070a05921.png",
+          "crop": {
+            "x": 0,
+            "y": -2.842170943040401e-14,
+            "width": 773.0014325679374,
+            "height": 432.880802238045
+          }
+        },
+        {
+          "id": "LBsMZtljWqHfS8Yg",
+          "x": 393.85309206434675,
+          "y": 157.6,
+          "width": 555.8856657394869,
+          "height": 232.3373572907541,
+          "kind": "image",
+          "src": "/reference/b53078da90732cddc8a71bd6b60ec2e8.png",
+          "crop": {
+            "x": 0,
+            "y": -9.663622053834075,
+            "width": 555.8856657394869,
+            "height": 251.66460139842226
+          }
+        },
+        {
+          "id": "LBg8rZV7ty4rFv0C",
+          "x": 138.10000000000014,
+          "y": 604.2535253029835,
+          "width": 1092.8000000000002,
+          "height": 48.969494896769,
+          "kind": "text",
+          "text": "JEFE DE LA DIVISIÓN DE MANTENIMIENTO AÉREO",
+          "style": {
+            "fontSize": "33.7039px",
+            "color": "#d39d26",
+            "letterSpacing": "0.042em",
+            "lineHeight": "1.382em",
+            "textAlign": "center",
+            "fontFamily": "Tex Gyre Termes"
+          },
+          "lineLengths": [
+            43
+          ],
+          "textWidth": 889.6445614233701,
+          "textHeight": 39.8658902
+        },
+        {
+          "id": "LBZtnpGZNR8w44zL",
+          "x": 242.38031827330087,
+          "y": 706.2230201997526,
+          "width": 873.492272812523,
+          "height": 117.186691,
+          "kind": "text",
+          "text": "Se complace en invitar a usted a las actividades en conmemoración por el:",
+          "style": {
+            "fontSize": "46.6665px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.041em",
+            "lineHeight": "1.346em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            37,
+            37
+          ]
+        },
+        {
+          "id": "LB9B1gXcSdp2P4d7",
+          "x": 138.1000000000006,
+          "y": 517.6251670493101,
+          "width": 1092.8,
+          "height": 72.0681461794069,
+          "kind": "text",
+          "text": "William Mighelt ZAMORA DÍAZ",
+          "style": {
+            "fontSize": "41.4004px",
+            "color": "#ffffff",
+            "fontWeight": "bold",
+            "fontStyle": "italic",
+            "letterSpacing": "0.042em",
+            "lineHeight": "1.382em",
+            "textAlign": "center",
+            "fontFamily": "Tex Gyre Termes"
+          },
+          "lineLengths": [
+            28
+          ],
+          "textWidth": 750.0607948148676,
+          "textHeight": 49.4651272
+        },
+        {
+          "id": "LBQ5y8NFWgkqj1SY",
+          "x": -25.296608411760644,
+          "y": 279.6659472261314,
+          "width": 304.12473341176076,
+          "height": 580.7170729736209,
+          "kind": "image",
+          "src": "/reference/6ed07ccc09dd961881ae22957273f0c0.png",
+          "crop": {
+            "x": -84.19605289950675,
+            "y": -232.2649735158809,
+            "width": 1562.456924433531,
+            "height": 1041.637949622354
+          }
+        },
+        {
+          "id": "LBV3ybv1RTLGsrfJ",
+          "x": 1087.171875,
+          "y": 273.7686786453769,
+          "width": 304.12473341176076,
+          "height": 580.7170729736209,
+          "kind": "image",
+          "src": "/reference/6ed07ccc09dd961881ae22957273f0c0.png",
+          "crop": {
+            "x": -84.19605289950664,
+            "y": -232.2649735158809,
+            "width": 1562.456924433531,
+            "height": 1041.637949622354
+          },
+          "flipX": true
+        },
+        {
+          "id": "LBnGsCrVT088k2J8",
+          "x": 197.81376404143066,
+          "y": 1323.1071957102054,
+          "width": 970.3724719171387,
+          "height": 241.1866618,
+          "kind": "text",
+          "text": "\"Cuando los motores se encienden, las hélices y palas comienzan a girar; hay un trabajo en equipo que ya cumplió su misión en tierra.\"",
+          "style": {
+            "fontSize": "46.6667px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.041em",
+            "lineHeight": "1.346em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            38,
+            42,
+            36,
+            19
+          ]
+        },
+        {
+          "id": "LBTQB8qrkKFnLypK",
+          "x": -3,
+          "y": 1564.2938575102053,
+          "width": 1378.4229327424339,
+          "height": 296.36093053962327,
+          "kind": "image",
+          "src": "/reference/c62fa60dc5bb78589f921643c593d155.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": 2.842170943040401e-14,
+            "width": 1378.4229327424339,
+            "height": 296.36093053962327
+          }
+        },
+        {
+          "id": "LBcQ1SQn4N0gP1q7",
+          "x": 457.49904993409007,
+          "y": 442.54516704931007,
+          "width": 428.59375,
+          "height": 71.08,
+          "kind": "text",
+          "text": "El coronel PNP",
+          "style": {
+            "fontSize": "60.0px",
+            "color": "#ffffff",
+            "fontWeight": "bold",
+            "letterSpacing": "0.042em",
+            "lineHeight": "1.382em",
+            "textAlign": "center",
+            "fontFamily": "Tex Gyre Termes"
+          },
+          "lineLengths": [
+            15
+          ]
+        },
+        {
+          "id": "LBSZ77sF5YWxxwPG",
+          "x": 136.57122582513819,
+          "y": 920.1920569407937,
+          "width": 1092.8575483497236,
+          "height": 118.20182976941159,
+          "kind": "text",
+          "text": "XLII ANIVERSARIO",
+          "style": {
+            "fontSize": "107.039px",
+            "color": "#d39d26",
+            "fontWeight": "bold",
+            "letterSpacing": "0.034em",
+            "lineHeight": "1.346em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            17
+          ],
+          "textWidth": 1186.890625,
+          "textHeight": 128.372306
+        },
+        {
+          "id": "LBhX9gnfvr0BhLzs",
+          "x": 104.5302999340887,
+          "y": 1094.8938867102052,
+          "width": 1131.53125,
+          "height": 134.213309,
+          "kind": "text",
+          "text": "DE CREACIÓN DE LA\nDIVISIÓN DE MANTENIMIENTO AÉREO",
+          "style": {
+            "fontSize": "53.3335px",
+            "color": "#d39d26",
+            "lineHeight": "1.346em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            18,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seccion-3",
+      "label": "Cuenta regresiva y fecha",
+      "height": 1647,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBXgkWlb163BKSRw",
+          "x": -5.000000000000227,
+          "y": -32.124348497257984,
+          "width": 1370.1540622203165,
+          "height": 1658.3847502001552,
+          "opacity": 0.34,
+          "kind": "image",
+          "src": "/reference/3ebb47e9d552fb3ce6387d79b6ffae6b.png",
+          "crop": {
+            "x": -31.691698029521376,
+            "y": 0,
+            "width": 1401.845760249838,
+            "height": 1658.3847502001552
+          }
+        },
+        {
+          "id": "LB6yVMJDKryKsXNv",
+          "x": -5,
+          "y": 1626.2604017028968,
+          "width": 1371,
+          "height": 38.27785306568974,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -78.25714693431024,
+            "width": 1371,
+            "height": 116.535
+          }
+        },
+        {
+          "id": "LB1dzHCl6rGLjPsD",
+          "x": 431.2204079961748,
+          "y": 1352.326648049328,
+          "width": 480.7312639903064,
+          "height": 3,
+          "kind": "line",
+          "color": "#d39d26"
+        },
+        {
+          "id": "LBH9Lyhy6Jc6XN54",
+          "x": 0,
+          "y": 1067.8204279823044,
+          "width": 550.2008784374304,
+          "height": 558.5795720176959,
+          "kind": "image",
+          "src": "/reference/a25361476367e1cf102be43f5d12e05b.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 550.2008784374304,
+            "height": 558.5795720176959
+          }
+        },
+        {
+          "id": "LB6P59tlqWwn1Y5H",
+          "x": 550.3478834275214,
+          "y": 1228.279216123179,
+          "width": 427.05525374316016,
+          "height": 90.44423300969906,
+          "reveal": true,
+          "kind": "text",
+          "text": "octubre",
+          "style": {
+            "fontSize": "66.6667px",
+            "color": "#ffffff",
+            "letterSpacing": "0.01em",
+            "textAlign": "center",
+            "fontFamily": "Lora"
+          },
+          "lineLengths": [
+            8
+          ],
+          "textWidth": 376.1662249656272,
+          "textHeight": 79.66666
+        },
+        {
+          "id": "LB52wpVvXtYGMW1Z",
+          "x": 409.3471791903132,
+          "y": 1133.5429925320348,
+          "width": 206.47125901532988,
+          "height": 242.63487360166306,
+          "reveal": true,
+          "kind": "text",
+          "text": "12",
+          "style": {
+            "fontSize": "308.862px",
+            "color": "#d39d26",
+            "letterSpacing": "0.01em",
+            "textAlign": "center",
+            "fontFamily": "Times New Roman MT"
+          },
+          "lineLengths": [
+            3
+          ],
+          "textWidth": 315.04687500000006,
+          "textHeight": 370.2276
+        },
+        {
+          "id": "LB6HqjVXbqXgglfy",
+          "x": 354.2049256131042,
+          "y": 1382.304325131125,
+          "width": 669.4023004277134,
+          "height": 63.33334,
+          "reveal": true,
+          "kind": "text",
+          "text": "hora: 8:30 a.m.",
+          "style": {
+            "fontSize": "53.3333px",
+            "color": "#ffffff",
+            "letterSpacing": "0.11em",
+            "textAlign": "center",
+            "fontFamily": "Lora"
+          },
+          "lineLengths": [
+            16
+          ]
+        },
+        {
+          "id": "LBMCRV9qWyGkjls9",
+          "x": 27.780737129916588,
+          "y": 1131.5644979083788,
+          "width": 572.0430107526881,
+          "height": 532,
+          "rotation": -90,
+          "kind": "image",
+          "src": "/reference/1e670efcc2f5de2af51903b36b7912a6.png",
+          "crop": {
+            "x": -5.684341886080802e-14,
+            "y": 0,
+            "width": 572.0430107526882,
+            "height": 532
+          },
+          "flipX": true
+        },
+        {
+          "id": "LB8MvmJTH86jxfPl",
+          "x": 520.8446535281126,
+          "y": 876.6653550274372,
+          "width": 324.3106929437743,
+          "height": 270.2589107864786,
+          "kind": "image",
+          "src": "/reference/6ca3c0d3b6453519b2b9ba8ce27ee3df.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 324.3106929437743,
+            "height": 270.2589107864786
+          }
+        },
+        {
+          "id": "LBRby30PgPhNl1jL",
+          "x": 177.34897084923034,
+          "y": 240.41257622127478,
+          "width": 1011.3020583015389,
+          "height": 55.666665,
+          "reveal": true,
+          "kind": "text",
+          "text": "La cuenta regresiva ha comenzado...",
+          "style": {
+            "fontSize": "46.6667px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1.25em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            36
+          ]
+        },
+        {
+          "id": "LBKSdLFv7k9GCzfp",
+          "x": 95.76432105552499,
+          "y": 358.4807768004397,
+          "width": 1169.4713578889496,
+          "height": 292.3678394722374,
+          "kind": "countdown"
+        },
+        {
+          "id": "LBjMtq0fBk2Xsd3h",
+          "x": 911.9516719864812,
+          "y": 155.0426184556656,
+          "width": 572.0430107526881,
+          "height": 532,
+          "kind": "image",
+          "src": "/reference/1e670efcc2f5de2af51903b36b7912a6.png",
+          "crop": {
+            "x": -5.684341886080802e-14,
+            "y": 0,
+            "width": 572.0430107526882,
+            "height": 532
+          }
+        },
+        {
+          "id": "LBtF4q4nS7D5VVqR",
+          "x": -5.000000000000114,
+          "y": 358.4807768004397,
+          "width": 1371,
+          "height": 13.709999999999999,
+          "kind": "image",
+          "src": "/reference/7bb59043a11c0116acf0d288648ab9f6.png",
+          "crop": {
+            "x": 0,
+            "y": -1.7763568394002505e-15,
+            "width": 1371,
+            "height": 13.709999999999999
+          }
+        },
+        {
+          "id": "LB8HWrBKyNhztZrV",
+          "x": -2.5000000000002274,
+          "y": 568.5307947221171,
+          "width": 1371,
+          "height": 13.709999999999999,
+          "kind": "image",
+          "src": "/reference/7bb59043a11c0116acf0d288648ab9f6.png",
+          "crop": {
+            "x": 0,
+            "y": -1.7763568394002505e-15,
+            "width": 1371,
+            "height": 13.709999999999999
+          }
+        },
+        {
+          "id": "LBpYtYhHCJnNBSm9",
+          "x": 989.9661621384623,
+          "y": -3.8430610610982683,
+          "width": 373.1922723361359,
+          "height": 378.87540338694,
+          "rotation": 90,
+          "kind": "image",
+          "src": "/reference/a25361476367e1cf102be43f5d12e05b.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 373.1922723361359,
+            "height": 378.87540338694
+          },
+          "flipY": true
+        },
+        {
+          "id": "LBjW72mVYG1p22nk",
+          "x": 172.05108058718793,
+          "y": 701.2407947221171,
+          "width": 1033.709990479546,
+          "height": 55.66666,
+          "reveal": true,
+          "kind": "text",
+          "text": "¡Para celebrar juntos nuestro aniversario!",
+          "style": {
+            "fontSize": "46.6668px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1.25em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            43
+          ]
+        },
+        {
+          "id": "LB2lgjVv9zYCvSQT",
+          "x": 596.8184382056431,
+          "y": 1141.9242658139158,
+          "width": 259.12842567347263,
+          "height": 90.44423300969906,
+          "reveal": true,
+          "kind": "text",
+          "text": "lunes",
+          "style": {
+            "fontSize": "66.6667px",
+            "color": "#ffffff",
+            "letterSpacing": "0.01em",
+            "textAlign": "center",
+            "fontFamily": "Lora"
+          },
+          "lineLengths": [
+            6
+          ],
+          "textWidth": 228.25000000000003,
+          "textHeight": 79.66666
+        }
+      ]
+    },
+    {
+      "id": "seccion-4",
+      "label": "Nuestra historia",
+      "height": 3107,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LB0n65jKtHDL6q7V",
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 935.2167346413494,
+          "kind": "image",
+          "src": "/reference/2432e3496f0edd3ff80faf631ea3f8db.png",
+          "crop": {
+            "x": -18.412550981012032,
+            "y": 0,
+            "width": 1402.825101962024,
+            "height": 935.2167346413494
+          }
+        },
+        {
+          "id": "LB6TpgHq3CNPCnQy",
+          "x": 2.2737367544323206e-13,
+          "y": 0,
+          "width": 1365.9999999999998,
+          "height": 587.3799999999999,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1365.9999999999998,
+            "height": 587.3799999999999
+          }
+        },
+        {
+          "id": "LB0P3s3rVPRf0TXR",
+          "x": -34.07543619839191,
+          "y": 2124.8953512101634,
+          "width": 1434.150872396784,
+          "height": 1075.6131542975882,
+          "kind": "image",
+          "src": "/reference/3b29871da33e9ba6acdd2a8d227f09d2.png",
+          "crop": {
+            "x": -1.1368683772161603e-13,
+            "y": 0,
+            "width": 1434.1508723967843,
+            "height": 1075.6131542975882
+          }
+        },
+        {
+          "id": "LBjtYVbvz7M4mqVc",
+          "x": -2.4999999999997726,
+          "y": 2191.860600115386,
+          "width": 1368.4999999999998,
+          "height": 588.4549999999999,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1368.4999999999998,
+            "height": 588.4549999999999
+          }
+        },
+        {
+          "id": "LBjXgdtq1F9Yl2R6",
+          "x": -1.7092262124721174,
+          "y": 961.467770860999,
+          "width": 1367.709226212472,
+          "height": 1258.996520330827,
+          "kind": "image",
+          "src": "/reference/983836cd67cde3bfcd3c3635a2c3f618.png",
+          "crop": {
+            "x": -2.2737367544323206e-13,
+            "y": -268.98211010094394,
+            "width": 1367.7092262124725,
+            "height": 1641.251071454967
+          }
+        },
+        {
+          "id": "LBZK1HyM0v93TqR1",
+          "x": -4.999999999999659,
+          "y": 944.0327179131823,
+          "width": 1370.9999999999995,
+          "height": 589.5299999999999,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1370.9999999999995,
+            "height": 589.5299999999999
+          }
+        },
+        {
+          "id": "LB4XB3LrRRjC4pfC",
+          "x": -1,
+          "y": 926.5171122016791,
+          "width": 1366,
+          "height": 21.287809233573984,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -94.82219076642588,
+            "width": 1366,
+            "height": 116.11
+          }
+        },
+        {
+          "id": "LBDJDRqtNmgcpNW0",
+          "x": 0,
+          "y": 2210.9297274996798,
+          "width": 1366,
+          "height": 19.069127384293058,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -97.0408726157072,
+            "width": 1366,
+            "height": 116.11
+          }
+        },
+        {
+          "id": "LBbtNPBVK4PRfGmW",
+          "x": 2.2737367544323206e-13,
+          "y": 3087.008378884504,
+          "width": 1366,
+          "height": 19.991621115495906,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -96.11837888450435,
+            "width": 1366,
+            "height": 116.11
+          }
+        },
+        {
+          "id": "LBZcrtwL6fQdFsK9",
+          "x": 222.81833844483327,
+          "y": 92.72995208503771,
+          "width": 920.3633231103339,
+          "height": 147.08,
+          "reveal": true,
+          "kind": "text",
+          "text": "En cada avión Cessna se refleja nuestra historia, dedicación y el recuerdo de quienes iniciaron esta aventura.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            40,
+            46,
+            25
+          ]
+        },
+        {
+          "id": "LB0PqvLvZ8Xll5N8",
+          "x": 134.35000000000025,
+          "y": 2276.625416207122,
+          "width": 1094.7999999999995,
+          "height": 147.34918008784774,
+          "reveal": true,
+          "kind": "text",
+          "text": "Desde el avión AN-32B símbolo de fuerza y potencia, reconocemos a quienes con experiencia y precisión mantienen nuestras alas listas para volar.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            52,
+            50,
+            43
+          ],
+          "textWidth": 1092.7999999999997,
+          "textHeight": 147.08
+        },
+        {
+          "id": "LBP2TjBDVZ9ZDr5K",
+          "x": 223.392414742323,
+          "y": 1029.9952659987805,
+          "width": 917.5059443028817,
+          "height": 197.3265990497467,
+          "reveal": true,
+          "kind": "text",
+          "text": "En cada helicóptero MI-17 que despega se vive el compromiso de nuestros profesionales, técnicos y expertos que hacen del mantenimiento una misión que cumplir.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            46,
+            41,
+            48,
+            24
+          ],
+          "textWidth": 916.359337129335,
+          "textHeight": 197.08
+        }
+      ]
+    },
+    {
+      "id": "seccion-5",
+      "label": "Cronograma y vestimenta",
+      "height": 1968,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBnTFbLWPc7S0L4h",
+          "x": -5.6078770967634455,
+          "y": 720.637754358024,
+          "width": 1371.6078770967636,
+          "height": 1236.7622456419758,
+          "opacity": 0.55,
+          "kind": "image",
+          "src": "/reference/f464854c33e7d981d638926cf62015b7.png",
+          "crop": {
+            "x": -199.5551111128043,
+            "y": 0,
+            "width": 1770.7180993223722,
+            "height": 1328.0385744917787
+          },
+          "alt": "Personal de mantenimiento junto a una aeronave"
+        },
+        {
+          "id": "LB9PntCHpNCkQTJD",
+          "x": 310.783913328495,
+          "y": 317.2287720383804,
+          "width": 73.18838541206568,
+          "height": 71.96857898853125,
+          "kind": "image",
+          "src": "/reference/0a92efe6d6b3679d159296f185b5cd48.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 73.18838541206568,
+            "height": 71.96857898853125
+          },
+          "alt": ""
+        },
+        {
+          "id": "LBN5ngDWnQCJ4RbQ",
+          "x": 961.8119470659118,
+          "y": 317.2287720383804,
+          "width": 73.18838541206568,
+          "height": 71.96857898853125,
+          "kind": "image",
+          "src": "/reference/badc88b719b77083c97c08d201943cca.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 73.18838541206568,
+            "height": 71.96857898853125
+          }
+        },
+        {
+          "id": "LBFXrgx0WjsPc8xR",
+          "x": 286.5328681815827,
+          "y": 392.19735102691163,
+          "width": 781.718509443307,
+          "height": 784.834591846319,
+          "kind": "image",
+          "src": "/reference/54f67c16d3a7dd08a51faf3f2d322243.png",
+          "crop": {
+            "x": 0,
+            "y": -7.583022013758466,
+            "width": 781.718509443307,
+            "height": 800.0006358738359
+          }
+        },
+        {
+          "id": "LBLYY8jxLN5vtWM6",
+          "x": -0.9999999999998863,
+          "y": 1946.5799049981922,
+          "width": 1374.719619992769,
+          "height": 35.958349770394456,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 0,
+            "y": -80.77805103822814,
+            "width": 1374.7196199927691,
+            "height": 116.85116769938537
+          }
+        },
+        {
+          "id": "LBmJ1DMtYY15rzF0",
+          "x": 594.0124680924883,
+          "y": 580.4846505429517,
+          "width": 266.8051795494537,
+          "height": 50.146360684989524,
+          "kind": "shape",
+          "viewWidth": 64,
+          "viewHeight": 64,
+          "paths": [
+            {
+              "path": "M0 0H64V64H0z",
+              "color": "#eee9e2"
+            }
+          ]
+        },
+        {
+          "id": "LBNqSLvZ850cps10",
+          "x": 440.0859375,
+          "y": 1135.018877179012,
+          "width": 485.828125,
+          "height": 204,
+          "kind": "text",
+          "text": "Vestimenta:\nPersonal PNP: Uniforme N° 4A\nCaballeros: Terno\nDamas: De vestir",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontWeight": "bold",
+            "fontStyle": "italic",
+            "letterSpacing": "0.003em",
+            "lineHeight": "1.3em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            12,
+            29,
+            18,
+            17
+          ]
+        },
+        {
+          "id": "LBMTW78vKzsyRg5n",
+          "x": 356.37810603452783,
+          "y": 308.75012519447637,
+          "width": 642.0280337374168,
+          "height": 75.64788,
+          "kind": "text",
+          "text": "de actividades",
+          "style": {
+            "fontSize": "63.2394px",
+            "color": "#d39d26",
+            "fontWeight": "bold",
+            "letterSpacing": "0.05em",
+            "lineHeight": "1em",
+            "textAlign": "center",
+            "fontFamily": "Tex Gyre Termes"
+          },
+          "lineLengths": [
+            15
+          ]
+        },
+        {
+          "id": "LBNMLN1VkT814W8p",
+          "x": 207.73737448831656,
+          "y": 168.14359986461727,
+          "width": 939.3094968298393,
+          "height": 138.0552,
+          "kind": "text",
+          "text": "cronograma",
+          "style": {
+            "fontSize": "115.276px",
+            "color": "#d39d26",
+            "fontWeight": "bold",
+            "lineHeight": "1em",
+            "textAlign": "center",
+            "fontFamily": "Tex Gyre Termes"
+          },
+          "lineLengths": [
+            11
+          ]
+        },
+        {
+          "id": "LBdrPgrrcqJBxzRr",
+          "x": 590.1571743717029,
+          "y": 576.2976712279412,
+          "width": 266.7415108339751,
+          "height": 57.33334,
+          "reveal": true,
+          "kind": "text",
+          "text": "campo deportivo\nDIRAVPOL",
+          "style": {
+            "fontSize": "26.6667px",
+            "color": "#00142d",
+            "fontWeight": "bold",
+            "letterSpacing": "-0.029em",
+            "lineHeight": "1em",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            16,
+            9
+          ]
+        },
+        {
+          "id": "LBStcw7XQVRwzcNh",
+          "x": 594.0124680924883,
+          "y": 784.6146469500711,
+          "width": 308.9899805125458,
+          "height": 57.33334,
+          "reveal": true,
+          "kind": "text",
+          "text": "Club ACENESPAR GC\nsede Camacho",
+          "style": {
+            "fontSize": "26.6667px",
+            "color": "#00142d",
+            "fontWeight": "bold",
+            "letterSpacing": "-0.029em",
+            "lineHeight": "1em",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            18,
+            13
+          ]
+        },
+        {
+          "id": "LBKPznJ0XJDDjjZX",
+          "x": 594.0124680924883,
+          "y": 1015.1068776258909,
+          "width": 308.9899805125458,
+          "height": 31.33334,
+          "reveal": true,
+          "kind": "text",
+          "text": "Rampa Bravo",
+          "style": {
+            "fontSize": "26.6667px",
+            "color": "#00142d",
+            "fontWeight": "bold",
+            "letterSpacing": "-0.029em",
+            "lineHeight": "1em",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seccion-6",
+      "label": "Galería de aeronaves",
+      "height": 3977,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBV0zqCzCsd1FB1X",
+          "x": -4.547473508864641e-13,
+          "y": 0,
+          "width": 1365.9999999999998,
+          "height": 1536.1942487213419,
+          "kind": "image",
+          "src": "/reference/f14e5e92529cc7da88ff425b0378037b.png",
+          "crop": {
+            "x": -1.1368683772161603e-13,
+            "y": -512.8057512786581,
+            "width": 1366,
+            "height": 2049
+          }
+        },
+        {
+          "id": "LBc80jxhr9vVJvp6",
+          "x": -4.547473508864641e-13,
+          "y": 0.9308726157065621,
+          "width": 1365.9999999999998,
+          "height": 587.3799999999999,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1365.9999999999998,
+            "height": 587.3799999999999
+          }
+        },
+        {
+          "id": "LBl7ytfq6tkrsXw3",
+          "x": 286.9190573546648,
+          "y": 84.99999999999996,
+          "width": 792.161885290669,
+          "height": 197.08,
+          "reveal": true,
+          "kind": "text",
+          "text": "El helicóptero UH-1H-II representa escuela de enseñanza, años de servicio, experiencia que se mantiene viva en nuestra historia en Aviación Policial.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            35,
+            40,
+            36,
+            39
+          ]
+        },
+        {
+          "id": "LBBJkV9HjkbVcPvB",
+          "x": -9.199335931098517,
+          "y": 1509.8531710081797,
+          "width": 1384.3986718621966,
+          "height": 38.65193942077111,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -79.02194768751559,
+            "width": 1384.3986718621966,
+            "height": 117.6738871082867
+          }
+        },
+        {
+          "id": "LBfJL4kQ6h8RmDYF",
+          "x": -10.864800626934766,
+          "y": 1566.7475526643236,
+          "width": 1386.0641365580327,
+          "height": 922.9324479081309,
+          "kind": "image",
+          "src": "/reference/d157d627bf5424e63d0e18c0526486f6.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -0.5551548986123294,
+            "width": 1386.0641365580327,
+            "height": 924.0427577053551
+          }
+        },
+        {
+          "id": "LBQQxtRblPXbQx4l",
+          "x": -10.864800626934652,
+          "y": 1529.1791407185658,
+          "width": 1387.7296012538686,
+          "height": 596.7237285391635,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1387.7296012538686,
+            "height": 596.7237285391635
+          }
+        },
+        {
+          "id": "LBBwvjYtVsQ9KLyX",
+          "x": 227.19398430305353,
+          "y": 1583.2022468884309,
+          "width": 911.6120313938925,
+          "height": 199.734473097073,
+          "reveal": true,
+          "kind": "text",
+          "text": "Cada vuelo del helicóptero EC-145 lleva consigo el esfuerzo, identidad y pertenencia institucional, con el fin de mantener pasión de volar, al servicio de la seguridad ciudadana.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            40,
+            45,
+            48,
+            46
+          ],
+          "textWidth": 899.4966985984012,
+          "textHeight": 197.08
+        },
+        {
+          "id": "LBGSpByb8N1Bvhl8",
+          "x": -8.368640515611105,
+          "y": 2489.6800005724544,
+          "width": 1385.2334411425452,
+          "height": 1468.9928483010879,
+          "kind": "image",
+          "src": "/reference/9d29a1e4dc02838544ea5bf9a03e2534.png",
+          "crop": {
+            "x": -1.1368683772161603e-13,
+            "y": -193.28728106996653,
+            "width": 1385.2334411425454,
+            "height": 1662.2801293710545
+          }
+        },
+        {
+          "id": "LB2rV94mnXr3rHN0",
+          "x": -8.368640515611105,
+          "y": 2489.680000572455,
+          "width": 1385.2334411425452,
+          "height": 595.6503796912943,
+          "kind": "image",
+          "src": "/reference/9374f1f744542bb853d953d119476acd.png",
+          "crop": {
+            "x": 4.547473508864641e-13,
+            "y": -1.1368683772161603e-13,
+            "width": 1385.2334411425452,
+            "height": 595.6503796912943
+          }
+        },
+        {
+          "id": "LBwbfK2Ng37v1vP4",
+          "x": 173.87085500915902,
+          "y": 2587.65028076922,
+          "width": 1020.7544500930047,
+          "height": 199.85490964888203,
+          "reveal": true,
+          "kind": "text",
+          "text": "La potencia del helicóptero UH-60 black haw, en nuestros tiempos es el traslado de conocimiento al mundo moderno en aviación, capacidades de nuestros profesionales PNP, en transición, con mucho éxito.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.014em",
+            "lineHeight": "1.273em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            48,
+            51,
+            51,
+            51
+          ],
+          "textWidth": 1006.5816615551666,
+          "textHeight": 197.08
+        },
+        {
+          "id": "LBxwb78rJl9XgN2H",
+          "x": -8.36864051561156,
+          "y": 3954.616528401676,
+          "width": 1385.2334411425454,
+          "height": 35.009054499989524,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -79.06959660234321,
+            "width": 1385.2334411425454,
+            "height": 117.74484249711635
+          }
+        },
+        {
+          "id": "LBTbzmH0bqCkR3Z2",
+          "x": -19.2334411425461,
+          "y": 2489.6800005724544,
+          "width": 1385.2334411425454,
+          "height": 19.337622947386627,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -98.40721954972929,
+            "width": 1385.2334411425454,
+            "height": 117.74484249711635
+          }
+        }
+      ]
+    },
+    {
+      "id": "seccion-7",
+      "label": "Confirmación de asistencia",
+      "height": 1208,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LBDckkG9x18zbmF7",
+          "x": 435.38938363145087,
+          "y": 904.2060015536076,
+          "width": 530.6445326626263,
+          "height": 122.71154817823233,
+          "kind": "image",
+          "src": "/reference/0f927e50efe3c9f8d1c349b6633542fd.png",
+          "crop": {
+            "x": 0,
+            "y": 7.105427357601002e-14,
+            "width": 530.6445326626263,
+            "height": 122.71154817823233
+          }
+        },
+        {
+          "id": "LBlzDjqRMgPzj6Fn",
+          "x": 540.2235748106589,
+          "y": 79.57005911866167,
+          "width": 285.55285037868236,
+          "height": 258.2748677041456,
+          "kind": "image",
+          "src": "/reference/5791d264133735af1249521794b76be6.png",
+          "crop": {
+            "x": -2.842170943040401e-14,
+            "y": -2.842170943040401e-14,
+            "width": 285.5528503786824,
+            "height": 258.27486770414566
+          }
+        },
+        {
+          "id": "LBYzq4PSVcJcn2fl",
+          "x": 0,
+          "y": 1178.91754973184,
+          "width": 1366,
+          "height": 38.13825476858657,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -77.97174523141342,
+            "width": 1366,
+            "height": 116.11
+          }
+        },
+        {
+          "id": "LBj6mKVnhS5tfjsj",
+          "x": 231.1775183619448,
+          "y": 362.8375471820977,
+          "width": 939.0682632016384,
+          "height": 72,
+          "reveal": true,
+          "kind": "text",
+          "text": "Confirmación de asistencia",
+          "style": {
+            "fontSize": "60.0px",
+            "color": "#d39d26",
+            "letterSpacing": "0.01em",
+            "lineHeight": "1.25em",
+            "textAlign": "center",
+            "fontFamily": "Times New Roman"
+          },
+          "lineLengths": [
+            27
+          ]
+        },
+        {
+          "id": "LBfy8Xq3zG490hq1",
+          "x": 441.28148060931613,
+          "y": 942.0617756427238,
+          "width": 518.8603387068957,
+          "height": 55,
+          "reveal": true,
+          "kind": "text",
+          "text": "CLICK AQUI",
+          "style": {
+            "fontSize": "46.6511px",
+            "lineHeight": "1.2em",
+            "textAlign": "center",
+            "fontFamily": "Times New Roman MT"
+          },
+          "lineLengths": [
+            11
+          ]
+        },
+        {
+          "id": "LB7pwzfs0mt9lJ0L",
+          "x": 120.60000000000025,
+          "y": 488.53933155360767,
+          "width": 1124.7999999999997,
+          "height": 310.66667,
+          "reveal": true,
+          "kind": "text",
+          "text": "Agradecemos confirmar su asistencia, para brindarle una adecuada atención y organización durante esta importante ceremonia.\n\nHaga clic en el botón para registrar su confirmación de asistencia en el formulario.",
+          "style": {
+            "fontSize": "46.6667px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "letterSpacing": "0.01em",
+            "lineHeight": "1.1em",
+            "textAlign": "center",
+            "fontFamily": "Georgia Pro"
+          },
+          "lineLengths": [
+            42,
+            47,
+            35,
+            1,
+            40,
+            45
+          ]
+        }
+      ],
+      "hotspot": {
+        "x": 435,
+        "y": 904,
+        "width": 531,
+        "height": 123,
+        "action": "rsvp",
+        "label": "Confirmar asistencia"
+      }
+    },
+    {
+      "id": "seccion-8",
+      "label": "Video",
+      "height": 1025,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LB5WwWmnTqKK19R6",
+          "x": 0,
+          "y": -20.7393173798298,
+          "width": 1366,
+          "height": 1063.3862200871808,
+          "kind": "video",
+          "src": "/reference/da0c98d4c9cb89ff1c7396cfa2892c8e.mp4",
+          "poster": "/reference/fad291b4588f006b4c87b2566ec611c4.jpg",
+          "alt": "Video de la División de Mantenimiento Aéreo"
+        }
+      ]
+    },
+    {
+      "id": "seccion-9",
+      "label": "Mensaje final",
+      "height": 2232,
+      "background": "#0a1931",
+      "elements": [
+        {
+          "id": "LB1tKyfLqlhQ59pq",
+          "x": -17.015951988956203,
+          "y": 0,
+          "width": 1390.6629522533324,
+          "height": 2229.822317182801,
+          "kind": "image",
+          "src": "/reference/d38d80d0253d619a3d419901c889d839.png",
+          "crop": {
+            "x": 0,
+            "y": -50.62617305072558,
+            "width": 1390.6629522533322,
+            "height": 2472.2896928948126
+          }
+        },
+        {
+          "id": "LBNkYgGyVDX8lxcX",
+          "x": -1.1368683772161603e-13,
+          "y": -4,
+          "width": 1366,
+          "height": 30.13825476858657,
+          "kind": "image",
+          "src": "/reference/77d62cd3d95608dabb1fabeaf02408aa.png",
+          "crop": {
+            "x": 1.1368683772161603e-13,
+            "y": -85.97174523141342,
+            "width": 1366,
+            "height": 116.11
+          }
+        },
+        {
+          "id": "LBCLKwssMbFhH1t8",
+          "x": 376.5653179429877,
+          "y": 110.60000000000002,
+          "width": 624.2683549801466,
+          "height": 67.90426975777247,
+          "kind": "text",
+          "text": "En este aniversario de nuestra",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            31
+          ],
+          "textWidth": 441.28125,
+          "textHeight": 48
+        },
+        {
+          "id": "LBHSXp1kGSTNCKpT",
+          "x": 173.96877352083163,
+          "y": 190.59318136928243,
+          "width": 1029.4614438244587,
+          "height": 90.0674311902289,
+          "kind": "text",
+          "text": "División de Mantenimiento Aéreo,",
+          "style": {
+            "fontSize": "53.3332px",
+            "color": "#f4b34a",
+            "fontWeight": "bold",
+            "fontStyle": "italic",
+            "lineHeight": "1em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            33
+          ],
+          "textWidth": 727.703125,
+          "textHeight": 63.66664
+        },
+        {
+          "id": "LBdkF5SsC92BGN2S",
+          "x": 84.95314348861689,
+          "y": 292.6606125595113,
+          "width": 1196.0937130227665,
+          "height": 288.59314647053304,
+          "kind": "text",
+          "text": "queremos celebrar no solo el trabajo que nos une, sino hacer un justo reconocimiento a cada integrante que, con su esfuerzo, profesionalismo y dedicación hace posible que nuestras aeronaves sigan volando al servicio de la patria.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1.3em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            55,
+            57,
+            59,
+            59
+          ],
+          "textWidth": 845.491725776511,
+          "textHeight": 204
+        },
+        {
+          "id": "LBnBZ0T7N6M6wh5L",
+          "x": 303.5459923979156,
+          "y": 562.544948246015,
+          "width": 770.3070060702908,
+          "height": 131.05917811612585,
+          "kind": "image",
+          "src": "/reference/8465537d8ae9eec83bfe356c7420d61a.png",
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "width": 770.3070060702908,
+            "height": 131.05917811612585
+          }
+        },
+        {
+          "id": "LB1rDYs49lQxYlbL",
+          "x": 135.71000409614214,
+          "y": 692.034964068128,
+          "width": 1121.3583760241993,
+          "height": 141.467228662026,
+          "kind": "text",
+          "text": "Será un honor contar con su presencia\ny compartir juntos en este momento tan especial.",
+          "style": {
+            "fontSize": "40.0px",
+            "color": "#ffffff",
+            "fontStyle": "italic",
+            "lineHeight": "1.3em",
+            "textAlign": "center",
+            "fontFamily": "Amiri"
+          },
+          "lineLengths": [
+            38,
+            49
+          ],
+          "textWidth": 792.6629980878428,
+          "textHeight": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+@font-face { font-family: "Arimo"; src: url("/reference/834f64ff415fb8f4f5d92d8fd40507e9.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Arimo"; src: url("/reference/711f50b3a8c00bb7e2e05ef85f982cb6.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Arimo"; src: url("/reference/b07201e0e9fc452103c1c0345b0e7c1d.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Arimo"; src: url("/reference/0803f40e19a074a5520c2746a6ba3c95.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Georgia Pro"; src: url("/reference/79fed30b6c848ea22c3979aae64ae7b3.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Georgia Pro"; src: url("/reference/ae50278771d3f9a33882da368917a4b1.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Georgia Pro"; src: url("/reference/21c8d2f02ea75082f5e1439e0f92f4d4.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Georgia Pro"; src: url("/reference/aa1eff3af8ad6cff7a926fb8198e93c2.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tex Gyre Termes"; src: url("/reference/3a21b5bbdc6f665dea2815f562643a4a.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tex Gyre Termes"; src: url("/reference/408d3bcd5016ed33ff3cf17d6baa0bb3.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tex Gyre Termes"; src: url("/reference/ef591452ea216d0a835d53af0e125f4a.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tex Gyre Termes"; src: url("/reference/6e6ebf7969e04b9acb9e02fac3fd1064.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Cinzel"; src: url("/reference/1cdd69923e0e144e7975467fb4094299.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/03bba4b84e844fc04d6bb22ae0b607a9.woff") format("woff"); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/903046509a38aa787d25066b795b75d6.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/8a554be3f10d4a5c0b33a5b14bbcaa92.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/0bf5337961e349884b4fc3fe90250337.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/e6f5a8d7c514b74f11fd37c43f1fde08.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/4c32bb82ced808462d169bee169db0aa.woff") format("woff"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/2910958f6684e68e634e4fc40152d6ea.woff") format("woff"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Open Sans"; src: url("/reference/89d12e555d75229f7390d0f90514b81b.woff") format("woff"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Amiri"; src: url("/reference/c00742fb8a3cdc8debb682d45e2e7246.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Amiri"; src: url("/reference/32b0bca78281e5f771fba5e1bd69dd48.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Amiri"; src: url("/reference/0229591f1aa62fe41aedc25996c90dc0.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("/reference/6b3b6f735b229858d62f55c3d3e89180.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("/reference/27aa7f0c59f750822535be76578b1040.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lora"; src: url("/reference/818cdbfa3f86184a75336273d702457a.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Lora"; src: url("/reference/c026733dc20c14742056cd3d076a7221.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lora"; src: url("/reference/e7d7067aaf811fc432ef1d1d532ea8f5.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Lora"; src: url("/reference/864215ecd5165c9707b82b2710049121.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Playfair Display"; src: url("/reference/b13d69694f0122da640e59bc600857e7.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/28da113752ff03b2816a0f1fd6e25e81.woff") format("woff"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/a6800d582b643f260bd9515ce1f391dd.woff") format("woff"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/3ac888241f3692fa183c086716930a97.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/c834048d02d6afd684a3f0aa36db22e4.woff") format("woff"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/27a518c92c2980af600b3277ca757867.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/5da9fdda07e833be26c33c63c5f13575.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/46eea8472bf0a4450d6b7af46d7f3a86.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/3bb5826d5c405b1ff4d87fb612cd2727.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman MT"; src: url("/reference/ea5fae91cec3a5def323339c663750e6.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman"; src: url("/reference/5150cf5e5328fb31659db34cd90f5fd5.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman"; src: url("/reference/8fe7a37dc463ceb667d94b8f130fb1f0.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Times New Roman"; src: url("/reference/0dd48fcac8de7235fa281dc3533d0837.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Times New Roman"; src: url("/reference/a97bf498dd93356d5077790228f075bc.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
