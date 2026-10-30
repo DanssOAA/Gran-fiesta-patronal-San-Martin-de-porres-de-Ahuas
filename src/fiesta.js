@@ -1,13 +1,13 @@
 // Contenido del PDF «GRAN FIESTA PATRONAL EN LIMA».
 // Nombres y aportes ajustados según las últimas correcciones del cliente.
-// El año 2026 se deduce de sábado 21 / domingo 22 de noviembre.
+// La celebración se centra en el domingo 22 de noviembre de 2026.
 export const fiesta = {
   title: 'Gran Fiesta Patronal en Lima · San Martín de Porres',
   patron: 'San Martín de Porres',
   place: 'Ahuas · Gorgor · Cajatambo',
   organization: 'Centro Social San Martin de Porres de Ahuas',
   year: 2026,
-  startsAt: '2026-11-21T20:00:00-05:00',
+  startsAt: '2026-11-22T08:00:00-05:00',
   musicStart: 34,
   venue: 'Centro Social “Huancapon”',
   address: 'Calle 1, Manzana E, Lote 06 Cooperativa Cajabamba 2da. Etapa, entre las Av. Universitaria y Av. Izaguirre.',
@@ -42,10 +42,6 @@ export const fiesta = {
     ['Edgail BARRERA VENTOCILLA', 'Negritos de Ahuas'],
   ],
   program: [
-    {
-      day: 'Sábado', date: '21', month: 'Noviembre', isoDate: '2026-11-21',
-      events: [['20:00', 'Novena en honor a nuestro Santo Patron San Martin de Porres.']],
-    },
     {
       day: 'Domingo', date: '22', month: 'Noviembre', isoDate: '2026-11-22',
       events: [

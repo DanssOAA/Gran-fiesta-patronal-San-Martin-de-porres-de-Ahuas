@@ -44,9 +44,9 @@ function ArrowIcon({ direction = 'down' }) {
   return <svg viewBox="0 0 24 24" aria-hidden="true" className={`arrow-icon arrow-${direction}`}><path d="M12 4v15m-6-6 6 6 6-6" /></svg>
 }
 
-function EventDates({ className }) {
-  return <p className={`${className} event-dates`} aria-label={`21 y 22 de noviembre de ${fiesta.year}`}>
-    <strong><span>21</span><span className="event-dates-join" aria-hidden="true">&amp;</span><span>22</span></strong>
+function EventDate({ className }) {
+  return <p className={`${className} event-dates`} aria-label={`22 de noviembre de ${fiesta.year}`}>
+    <strong><span>22</span></strong>
     <span className="event-dates-label">de noviembre · {fiesta.year}</span>
   </p>
 }
@@ -139,7 +139,7 @@ function Cover({ onOpen, opening }) {
         <span className="envelope-action">Abrir invitación <ArrowIcon direction="right" /></span>
       </button>
       <h1 className="cover-title">Gran Fiesta Patronal <em>en Lima</em></h1>
-      <EventDates className="cover-date" />
+      <EventDate className="cover-date" />
       <FloralOrnament />
     </div>
   </main>
@@ -175,7 +175,7 @@ function Invitation({ music, onHome }) {
       <h1 id="hero-title">San Martín <em>de Porres</em></h1>
       <p className="hero-description">Patrón tutelar del pueblo de<br /><strong>Ahuas · Gorgor · Cajatambo</strong></p>
       <FloralOrnament />
-      <EventDates className="hero-date" />
+      <EventDate className="hero-date" />
       <MusicPlayer music={music} />
       <a className="scroll-cue" href="#invitacion-familia"><span>Desliza para descubrir la invitación</span><ArrowIcon /></a>
     </section>
@@ -196,8 +196,6 @@ function Invitation({ music, onHome }) {
     <section className="date-section section-pad reveal" aria-label="Fecha y cuenta regresiva">
       <SectionHeading eyebrow="Guarda la fecha">Una celebración<br /><em>para reencontrarnos</em></SectionHeading>
       <div className="date-pair">
-        <div><p>Sábado</p><strong>21</strong><span>Noviembre</span><small>Novena · 20:00 horas</small></div>
-        <span className="date-amp" aria-hidden="true">&amp;</span>
         <div><p>Domingo</p><strong>22</strong><span>Noviembre</span><small>Degustación · 08:00–10:00 horas<br />Misa · 11:00 horas</small></div>
       </div>
       <p className="countdown-copy">La cuenta regresiva ha comenzado…</p>
