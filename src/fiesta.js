@@ -72,4 +72,4 @@ export const images = {
   village: '/fiesta/ahuas-paisaje.jpeg',
 }
 
-export const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${fiesta.venue}, ${fiesta.address}, Lima, Perú`)}`
+export const mapUrl = 'https://maps.app.goo.gl/eSQvLUycC7xZw6MKA?g_st=aw'

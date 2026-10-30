@@ -16,6 +16,6 @@ La portada abre la invitación mediante `#invitacion`. La música comienza en **
 
 El PDF no indica el año: se usa **2026** porque el 21 de noviembre cae sábado y el 22 domingo, tal como especifica la programación. La cuenta regresiva apunta al primer acto: sábado 21 a las 20:00, hora de Lima.
 
-Las fotografías se extrajeron directamente del PDF y se guardaron en `public/fiesta/`. La ubicación abre una búsqueda de Google Maps con la dirección literal del documento; no se ha inventado un punto geográfico. El PDF no contiene teléfono, formulario de confirmación ni video. Si se proporciona una URL de confirmación, asignarla a `fiesta.rsvpUrl` para mostrar el botón correspondiente.
+Las fotografías se extrajeron directamente del PDF y se guardaron en `public/fiesta/`. El botón «Ver ubicación» abre el enlace de Google Maps proporcionado por el cliente: `https://maps.app.goo.gl/eSQvLUycC7xZw6MKA?g_st=aw`. El PDF no contiene teléfono, formulario de confirmación ni video. Si se proporciona una URL de confirmación, asignarla a `fiesta.rsvpUrl` para mostrar el botón correspondiente.
 
 La implementación anterior se conserva en los archivos de referencia de `src/` y las copias de trabajo en `.reference-backup/`. Sus fotografías de aviación se archivaron fuera de `public/` para que no se incluyan en la nueva publicación.
