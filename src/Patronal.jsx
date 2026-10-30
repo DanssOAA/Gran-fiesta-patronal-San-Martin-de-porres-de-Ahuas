@@ -1,19 +1,41 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { fiesta, images, mapUrl } from './fiesta.js'
 import { clampSeek, remainingTime } from './playback.js'
+import { mountEntranceMotion } from './entrance-motion.js'
 import musicUrl from './upload/BANDA ORQUESTA CENTRO MUSICAL HUANRI - ABREME LA PUERTA OCROS ANCASH.mp3'
 import './fonts.css'
 import './patronal.css'
 import './folklore.css'
+import './motion.css'
 
 const insideInvitation = () => window.location.hash !== '' && window.location.hash !== '#portada'
+const useMotionEffect = typeof document === 'undefined' ? useEffect : useLayoutEffect
+const photoDimensions = {
+  [images.pollada]: [583, 341],
+  [images.cuy]: [1280, 1048],
+  [images.negritos]: [1537, 817],
+  [images.pallas]: [1254, 1254],
+  [images.tradition]: [702, 566],
+  [images.band]: [1280, 813],
+}
+
+function useEntranceMotion() {
+  const root = useRef(null)
+  useMotionEffect(() => mountEntranceMotion(root.current), [])
+  return root
+}
+
+function FestiveDetails() {
+  const positions = [[7, 13], [91, 9], [15, 38], [85, 32], [8, 67], [94, 59], [19, 87], [82, 84]]
+  return <div className="festive-details" aria-hidden="true">{positions.map(([x, y], index) => <i key={index} style={{ left: `${x}%`, top: `${y}%`, '--drift-delay': `${-index * 1.3}s`, '--drift-duration': `${7 + index % 4 * 1.6}s` }} />)}</div>
+}
 
 function FloralOrnament({ className = '' }) {
   return <svg className={`floral-ornament ${className}`} viewBox="0 0 260 52" fill="none" aria-hidden="true">
-    <path d="M7 28c40 0 54-1 88-4m158 4c-40 0-54-1-88-4M78 25c-8-8-15-9-23-8 5 7 12 10 23 8Zm-17 2c-7 7-14 9-22 8 4-7 11-10 22-8Zm121-2c8-8 15-9 23-8-5 7-12 10-23 8Zm17 2c7 7 14 9 22 8-4-7-11-10-22-8Z" stroke="currentColor" strokeWidth="1" />
-    <path d="M130 5c-8 8-8 13 0 21 8-8 8-13 0-21Zm0 42c-8-8-8-13 0-21 8 8 8 13 0 21Zm-21-21c8-8 13-8 21 0-8 8-13 8-21 0Zm42 0c-8-8-13-8-21 0 8 8 13 8 21 0Z" stroke="currentColor" />
+    <path pathLength="1" d="M7 28c40 0 54-1 88-4m158 4c-40 0-54-1-88-4M78 25c-8-8-15-9-23-8 5 7 12 10 23 8Zm-17 2c-7 7-14 9-22 8 4-7 11-10 22-8Zm121-2c8-8 15-9 23-8-5 7-12 10-23 8Zm17 2c7 7 14 9 22 8-4-7-11-10-22-8Z" stroke="currentColor" strokeWidth="1" />
+    <path pathLength="1" d="M130 5c-8 8-8 13 0 21 8-8 8-13 0-21Zm0 42c-8-8-8-13 0-21 8 8 8 13 0 21Zm-21-21c8-8 13-8 21 0-8 8-13 8-21 0Zm42 0c-8-8-13-8-21 0 8 8 13 8 21 0Z" stroke="currentColor" />
     <circle cx="130" cy="26" r="5" fill="currentColor" />
-    <path d="m105 10 8 6m42-6-8 6m-42 26 8-6m42 6-8-6" stroke="currentColor" />
+    <path pathLength="1" d="m105 10 8 6m42-6-8 6m-42 26 8-6m42 6-8-6" stroke="currentColor" />
   </svg>
 }
 
@@ -88,9 +110,11 @@ function Countdown() {
 }
 
 function Cover({ onOpen, opening }) {
-  return <main className={`cover ${opening ? 'is-opening' : ''}`} id="portada">
-    <img className="cover-landscape" src={images.village} alt="" fetchpriority="high" />
+  const motionRoot = useEntranceMotion()
+  return <main ref={motionRoot} className={`cover ${opening ? 'is-opening' : ''}`} id="portada">
+    <img className="cover-landscape" src={images.village} width="1280" height="802" alt="" fetchpriority="high" />
     <div className="cover-shade" />
+    <FestiveDetails />
     <div className="cover-content">
       <p className="cover-kicker">Ahuas · Gorgor · Cajatambo</p>
       <button className="envelope" onClick={onOpen} disabled={opening} aria-label="Abrir la invitación a la fiesta de San Martín de Porres">
@@ -98,7 +122,7 @@ function Cover({ onOpen, opening }) {
         <span className="envelope-topline">Centro Social<br />San Martin de Porres de Ahuas</span>
         <span className="envelope-flap" />
         <span className="envelope-fold" />
-        <span className="patron-seal"><img src={images.saint} alt="" /></span>
+        <span className="patron-seal"><img src={images.saint} width="931" height="1485" alt="" /></span>
         <span className="envelope-caption">Tienes una invitación</span>
         <span className="envelope-action">Haz clic para abrir <ArrowIcon direction="right" /></span>
       </button>
@@ -122,22 +146,18 @@ function NameList({ rows, className = '' }) {
 }
 
 function Photo({ src, alt, caption, className = '' }) {
-  return <figure className={`pdf-photo reveal ${className}`}><img src={src} alt={alt} loading="lazy" decoding="async" />{caption && <figcaption>{caption}</figcaption>}</figure>
+  const [width, height] = photoDimensions[src] ?? []
+  return <figure className={`pdf-photo reveal ${className}`}><div className="photo-window"><img src={src} width={width} height={height} alt={alt} loading="lazy" decoding="async" /></div>{caption && <figcaption>{caption}</figcaption>}</figure>
 }
 
 function Invitation({ music, onHome }) {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) if (entry.isIntersecting) { entry.target.classList.add('entered'); observer.unobserve(entry.target) }
-    }, { threshold: .08 })
-    document.querySelectorAll('.reveal').forEach((node) => observer.observe(node))
-    return () => observer.disconnect()
-  }, [])
+  const motionRoot = useEntranceMotion()
 
-  return <main className="invitation" id="invitacion">
+  return <main ref={motionRoot} className="invitation" id="invitacion">
     <section className="patron-hero" aria-labelledby="hero-title">
+      <FestiveDetails />
       <p className="hero-topline">Gran Fiesta Patronal en Lima</p>
-      <div className="saint-frame"><img src={images.saint} alt="San Martin de Porres, rodeado de rosas y acompañado de los animales" fetchpriority="high" /></div>
+      <div className="saint-frame"><img src={images.saint} width="931" height="1485" alt="San Martin de Porres, rodeado de rosas y acompañado de los animales" fetchpriority="high" /></div>
       <p className="eyebrow">En honor a nuestro Santo Patrón</p>
       <h1 id="hero-title">San Martín <em>de Porres</em></h1>
       <p className="hero-description">Patrón tutelar del pueblo de<br /><strong>Ahuas · Gorgor · Cajatambo</strong></p>
@@ -228,7 +248,7 @@ function Invitation({ music, onHome }) {
     </section>
 
     <section className="closing" aria-label="Mensaje final y paisaje de Ahuas">
-      <img src={images.village} alt="Paisaje de Ahuas entre montañas, campos y cielo nublado, fotografía del PDF" loading="lazy" />
+      <img src={images.village} width="1280" height="802" alt="Paisaje de Ahuas entre montañas, campos y cielo nublado, fotografía del PDF" loading="lazy" />
       <div className="closing-shade" />
       <div className="closing-copy"><p className="eyebrow">Ahuas · Gorgor · Cajatambo</p><FloralOrnament /><h2>Que la fe y la tradición<br /><em>nos vuelvan a reunir.</em></h2><p>Centro Social San Martin de Porres de Ahuas</p><strong>¡Te esperamos!</strong></div>
     </section>
@@ -257,7 +277,7 @@ export default function Patronal() {
     setOpening(true)
     timer.current = window.setTimeout(() => {
       window.location.hash = 'invitacion'; setOpening(false)
-    }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650)
+    }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1100)
   }
   function home() { music.pause(); window.location.hash = 'portada' }
   function toggleMusic() { setFloatingVisible(true); void music.toggle() }

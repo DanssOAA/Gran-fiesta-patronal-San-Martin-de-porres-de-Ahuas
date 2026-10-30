@@ -1,0 +1,120 @@
+.invitation, .cover-content { animation: none; }
+.cover-content { position: relative; z-index: 1; }
+.patron-hero { isolation: isolate; overflow: hidden; }
+.patron-hero > :not(.festive-details) { position: relative; z-index: 1; }
+
+/* Each item enters independently, with a short stagger inside its own group. */
+.motion-ready [data-motion] {
+  --motion-x: 0px;
+  --motion-y: 28px;
+  --motion-scale: 1;
+  --motion-rotate: 0deg;
+  --motion-delay: 0ms;
+}
+.motion-ready [data-motion="heading"] { --motion-y: 34px; --motion-scale: .98; }
+.motion-ready [data-motion="row"] { --motion-x: -25px; --motion-y: 12px; }
+.motion-ready [data-motion="left"] { --motion-x: -38px; --motion-y: 10px; }
+.motion-ready [data-motion="pop"] { --motion-y: 22px; --motion-scale: .88; }
+.motion-ready [data-motion="portrait"] { --motion-y: 42px; --motion-scale: .9; }
+.motion-ready [data-motion="ornament"] { --motion-y: 12px; --motion-scale: .85; }
+.motion-ready [data-motion="envelope"] { --motion-y: 40px; --motion-scale: .9; --motion-rotate: -2deg; }
+.motion-ready [data-motion="photo-left"] { --motion-x: -52px; --motion-y: 30px; --motion-scale: .96; --motion-rotate: -1.2deg; }
+.motion-ready [data-motion="photo-right"] { --motion-x: 52px; --motion-y: 30px; --motion-scale: .96; --motion-rotate: 1.2deg; }
+.motion-ready .motion-pending {
+  opacity: 0;
+  translate: var(--motion-x) var(--motion-y);
+  scale: var(--motion-scale);
+  rotate: var(--motion-rotate);
+  pointer-events: none;
+}
+.motion-ready [data-motion="heading"].motion-pending { filter: blur(4px); }
+.motion-ready .motion-entered {
+  opacity: 1;
+  translate: 0 0;
+  scale: 1;
+  rotate: 0deg;
+  filter: none;
+  transition:
+    opacity .8s cubic-bezier(.2, .7, .2, 1) var(--motion-delay),
+    translate .95s cubic-bezier(.16, 1, .3, 1) var(--motion-delay),
+    scale .95s cubic-bezier(.16, 1, .3, 1) var(--motion-delay),
+    rotate .95s cubic-bezier(.16, 1, .3, 1) var(--motion-delay),
+    filter .8s ease var(--motion-delay),
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+.motion-ready h1.motion-entered em { animation: subtitle-in .9s cubic-bezier(.16, 1, .3, 1) calc(var(--motion-delay) + .14s) backwards; }
+.motion-ready .floral-ornament.motion-entered path { stroke-dasharray: 1; animation: floral-draw 1.5s ease var(--motion-delay) backwards; }
+.motion-ready .floral-ornament.motion-entered circle { transform-box: fill-box; transform-origin: center; animation: flower-bloom .75s cubic-bezier(.2, 1.4, .5, 1) calc(var(--motion-delay) + .25s) backwards; }
+.photo-window { overflow: hidden; }
+.photo-window img { transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+.motion-ready .pdf-photo.motion-entered .photo-window img { animation: photo-focus 1.5s cubic-bezier(.16, 1, .3, 1) var(--motion-delay) backwards; }
+
+/* Slow decorative movement stops while its section is outside the viewport. */
+.festive-details { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.festive-details i { position: absolute; width: 8px; height: 8px; background: #ffd43b; opacity: .65; animation: detail-drift var(--drift-duration, 9s) ease-in-out var(--drift-delay, 0s) infinite alternate; animation-play-state: paused; }
+.festive-details i:nth-child(3n + 1) { rotate: 45deg; background: #ed258b; }
+.festive-details i:nth-child(3n + 2) { border-radius: 50%; background: #00a671; }
+.festive-details i:nth-child(3n) { width: 5px; height: 15px; rotate: -20deg; }
+.cover .festive-details i { box-shadow: 0 0 12px #ffd43b30; }
+.motion-in-view > .festive-details i { animation-play-state: running; }
+.cover-landscape { transform-origin: center 65%; animation: landscape-breathe 22s ease-in-out infinite alternate; animation-play-state: paused; }
+.cover.motion-in-view .cover-landscape { animation-play-state: running; }
+.closing > img { animation: landscape-breathe 26s ease-in-out infinite alternate; animation-play-state: paused; }
+.closing.motion-in-view > img { animation-play-state: running; }
+.patron-seal::after { content: ''; position: absolute; inset: -7px; border: 1px solid #ffe36a; border-radius: 50%; opacity: 0; pointer-events: none; }
+.motion-in-view .patron-seal::after { animation: seal-ripple 3s ease-out infinite; }
+.motion-in-view .scroll-cue .arrow-icon { animation: scroll-invite 1.7s ease-in-out infinite; }
+.saint-frame { position: relative; }
+.saint-frame::after { content: ''; position: absolute; top: -25%; bottom: -25%; left: -80%; width: 32%; background: linear-gradient(90deg, transparent, #fff8d935, transparent); rotate: -22deg; pointer-events: none; }
+.motion-in-view .saint-frame::after { animation: portrait-light 9s ease-in-out infinite; }
+.button { position: relative; overflow: hidden; }
+.button::after { content: ''; position: absolute; top: -70%; left: -70%; width: 35%; height: 240%; rotate: -20deg; background: linear-gradient(90deg, transparent, #fff5cb40, transparent); pointer-events: none; }
+.motion-in-view .button::after { animation: button-light 6s ease-in-out infinite; }
+.music-player button { transition: transform .25s ease, color .25s ease, background .25s ease; }
+.motion-in-view .music-player.is-playing .main-play { animation: player-glow 2.5s ease-in-out infinite; }
+.floating-music { animation: floating-control-in .6s cubic-bezier(.2, 1.3, .5, 1) both; }
+
+/* The envelope opens before the invitation replaces the cover. */
+.cover { perspective: 1400px; }
+.envelope { transform-style: preserve-3d; }
+.envelope-flap { backface-visibility: hidden; transition: transform .85s cubic-bezier(.4, 0, .2, 1), opacity .85s ease; }
+.is-opening .envelope-flap { transform: rotateX(178deg); opacity: .15; }
+.is-opening .envelope { transform: translateY(-16px) rotateX(8deg); transition: transform .85s cubic-bezier(.16, 1, .3, 1); }
+.is-opening .cover-content { opacity: 0; translate: 0 -28px; scale: 1.04; transition: opacity .4s .62s, translate 1.05s cubic-bezier(.4, 0, .2, 1), scale 1.05s ease; }
+
+@media (hover: hover) {
+  .pdf-photo:hover { transform: translateY(-5px); }
+  .pdf-photo:hover .photo-window img { transform: scale(1.035); }
+  .music-player button:hover { transform: translateY(-2px); }
+  .music-player .main-play:hover { transform: scale(1.06); }
+  .button:hover .arrow-icon { scale: 1.1; }
+  .name-row { transition: background .3s ease; }
+  .name-row:hover { background: #ffffff0a; }
+  .donors .name-row:hover { background: #ffedf6; }
+}
+
+@keyframes subtitle-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+@keyframes floral-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes flower-bloom { from { opacity: 0; scale: .2; } to { opacity: 1; scale: 1; } }
+@keyframes photo-focus { from { transform: scale(1.1) translateY(8px); } to { transform: scale(1) translateY(0); } }
+@keyframes detail-drift { from { transform: translate3d(0, 10px, 0) rotate(-15deg); opacity: .35; } to { transform: translate3d(10px, -18px, 0) rotate(30deg); opacity: .75; } }
+@keyframes landscape-breathe { from { transform: scale(1.02); } to { transform: scale(1.1); } }
+@keyframes seal-ripple { 0% { scale: .92; opacity: .8; } 75%, 100% { scale: 1.25; opacity: 0; } }
+@keyframes scroll-invite { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
+@keyframes portrait-light { 0%, 66% { left: -80%; } 88%, 100% { left: 150%; } }
+@keyframes button-light { 0%, 62% { left: -70%; } 88%, 100% { left: 145%; } }
+@keyframes player-glow { 0%, 100% { box-shadow: inset 0 0 0 3px #ffe87577, 0 0 0 0 #ffd43b00; } 50% { box-shadow: inset 0 0 0 3px #ffe87599, 0 0 0 6px #ffd43b20; } }
+@keyframes floating-control-in { from { opacity: 0; transform: scale(.65) rotate(-12deg); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 600px) {
+  .motion-ready [data-motion="photo-left"] { --motion-x: -28px; --motion-y: 22px; }
+  .motion-ready [data-motion="photo-right"] { --motion-x: 28px; --motion-y: 22px; }
+  .festive-details i { width: 6px; height: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .motion-pending, .motion-ready .motion-entered { opacity: 1; translate: none; scale: none; rotate: none; filter: none; pointer-events: auto; }
+  .festive-details { display: none; }
+  .patron-seal::after, .saint-frame::after, .button::after { display: none; }
+  .cover-landscape, .closing > img, .photo-window img { transform: none !important; }
+}

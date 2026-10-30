@@ -12,6 +12,8 @@ npm run preview
 
 La portada abre la invitación mediante `#invitacion`. La música comienza en **0:34**; pausar conserva la posición y al finalizar repite desde 0:34. Los botones laterales retroceden o adelantan diez segundos. Después de activar la música aparece un control flotante para pausarla desde cualquier sección.
 
+Las entradas se gestionan por elemento en `src/entrance-motion.js` y `src/motion.css`: títulos, adornos, fotografías, nombres, horarios y botones aparecen en secuencia al entrar en pantalla. La portada abre el sobre antes de pasar a la invitación; hay detalles decorativos flotantes, trazado de adornos y movimiento suave de los fondos. El movimiento continuo se pausa fuera de pantalla y se respeta la preferencia de movimiento reducido. Si no está disponible el observador del navegador, el contenido permanece visible.
+
 ## Contenido y personalización
 
 `src/fiesta.js` contiene los textos del PDF actualizado, cinco mayordomos, la representante del Centro Social Huancapon, quince donantes con sus aportes, y los nueve actos del programa. Incluye «Rosa ARCE UZURIAGA y esposo» como mayordomía de misa y la degustación del domingo de 08:00 a 10:00. Se conservaron los nombres, importes y las grafías del documento. `src/Patronal.jsx` construye la portada y todas las secciones. `src/patronal.css` define la estructura y `src/folklore.css` aplica la paleta viva solicitada por el cliente: fucsia, rojo, verde, azul y amarillo, inspirada en los trajes y tejidos de las fotografías. Las secciones incorporan una cenefa geométrica vectorial en `public/fiesta/cenefa-folklorica.svg`.
