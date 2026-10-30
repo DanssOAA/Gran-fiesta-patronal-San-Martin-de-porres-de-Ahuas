@@ -170,7 +170,7 @@ function Invitation({ music, onHome }) {
       <FestiveDetails />
       <p className="hero-topline">Gran Fiesta Patronal en Lima</p>
       <p className="hero-organization"><OrganizationName /></p>
-      <div className="saint-frame"><img src={images.saint} width="931" height="1485" alt="San Martin de Porres, rodeado de rosas y acompañado de los animales" fetchpriority="high" /></div>
+      <div className="saint-frame village-frame"><img src={images.village} width="1280" height="802" alt="Vista del pueblo de Ahuas entre montañas y campos" fetchpriority="high" /></div>
       <p className="eyebrow">En honor a nuestro Santo Patrón</p>
       <h1 id="hero-title">San Martín <em>de Porres</em></h1>
       <p className="hero-description">Patrón tutelar del pueblo de<br /><strong>Ahuas · Gorgor · Cajatambo</strong></p>
