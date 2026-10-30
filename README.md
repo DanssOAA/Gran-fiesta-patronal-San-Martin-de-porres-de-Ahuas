@@ -2,7 +2,7 @@
 
 Invitación digital para el Centro Social San Martin de Porres de Ahuas, basada en el contenido y las ocho fotografías de `src/upload/GRAN FIESTA PATRONAL EN LIMA.pdf`. Conserva el acceso por portada, apertura de invitación, música, cuenta regresiva, programa, imágenes y cierre de la referencia inicial.
 
-Los fondos y las cenefas ocupan todo el ancho de la pantalla, sin franjas exteriores. El contenido interior mantiene un ancho máximo de lectura de 1040 px con márgenes adaptables; en móvil conserva 25 px de separación interior.
+El paisaje de Ahuas forma un fondo uniforme en toda la web. En escritorio, la invitación se presenta como una carta centrada de hasta 1040 px, sin franjas laterales de color sólido; en celular ocupa todo el ancho. La portada usa contenido fluido para que el nombre del Centro Social, la imagen de San Martín y las fechas ampliadas no se superpongan. `src/responsive.css` adapta portada, tipografías, programa, nombres y controles a pantallas pequeñas.
 
 ```sh
 npm run dev

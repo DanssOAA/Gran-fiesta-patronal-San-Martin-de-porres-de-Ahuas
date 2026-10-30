@@ -7,6 +7,7 @@ import './fonts.css'
 import './patronal.css'
 import './folklore.css'
 import './motion.css'
+import './responsive.css'
 
 const insideInvitation = () => window.location.hash !== '' && window.location.hash !== '#portada'
 const useMotionEffect = typeof document === 'undefined' ? useEffect : useLayoutEffect
@@ -41,6 +42,17 @@ function FloralOrnament({ className = '' }) {
 
 function ArrowIcon({ direction = 'down' }) {
   return <svg viewBox="0 0 24 24" aria-hidden="true" className={`arrow-icon arrow-${direction}`}><path d="M12 4v15m-6-6 6 6 6-6" /></svg>
+}
+
+function EventDates({ className }) {
+  return <p className={`${className} event-dates`} aria-label={`21 y 22 de noviembre de ${fiesta.year}`}>
+    <strong><span>21</span><span className="event-dates-join" aria-hidden="true">&amp;</span><span>22</span></strong>
+    <span className="event-dates-label">de noviembre · {fiesta.year}</span>
+  </p>
+}
+
+function OrganizationName() {
+  return <><span className="organization-name">San Martin <span className="organization-break">de Porres</span></span><span className="organization-origin">de Ahuas</span></>
 }
 
 function useMusic() {
@@ -119,15 +131,15 @@ function Cover({ onOpen, opening }) {
       <p className="cover-kicker">Ahuas · Gorgor · Cajatambo</p>
       <button className="envelope" onClick={onOpen} disabled={opening} aria-label="Abrir la invitación a la fiesta de San Martín de Porres">
         <span className="envelope-frame" />
-        <span className="envelope-topline">Centro Social<br />San Martin de Porres de Ahuas</span>
+        <span className="envelope-topline"><span>Centro Social</span><strong><OrganizationName /></strong></span>
         <span className="envelope-flap" />
         <span className="envelope-fold" />
         <span className="patron-seal"><img src={images.saint} width="931" height="1485" alt="" /></span>
         <span className="envelope-caption">Tienes una invitación</span>
-        <span className="envelope-action">Haz clic para abrir <ArrowIcon direction="right" /></span>
+        <span className="envelope-action">Abrir invitación <ArrowIcon direction="right" /></span>
       </button>
       <h1 className="cover-title">Gran Fiesta Patronal <em>en Lima</em></h1>
-      <p className="cover-date">21 &amp; 22 de noviembre · {fiesta.year}</p>
+      <EventDates className="cover-date" />
       <FloralOrnament />
     </div>
   </main>
@@ -157,12 +169,13 @@ function Invitation({ music, onHome }) {
     <section className="patron-hero" aria-labelledby="hero-title">
       <FestiveDetails />
       <p className="hero-topline">Gran Fiesta Patronal en Lima</p>
+      <p className="hero-organization"><span>Centro Social</span><strong><OrganizationName /></strong></p>
       <div className="saint-frame"><img src={images.saint} width="931" height="1485" alt="San Martin de Porres, rodeado de rosas y acompañado de los animales" fetchpriority="high" /></div>
       <p className="eyebrow">En honor a nuestro Santo Patrón</p>
       <h1 id="hero-title">San Martín <em>de Porres</em></h1>
       <p className="hero-description">Patrón tutelar del pueblo de<br /><strong>Ahuas · Gorgor · Cajatambo</strong></p>
       <FloralOrnament />
-      <p className="hero-date">21 &amp; 22 <span>de noviembre</span> {fiesta.year}</p>
+      <EventDates className="hero-date" />
       <MusicPlayer music={music} />
       <a className="scroll-cue" href="#invitacion-familia"><span>Desliza para descubrir la invitación</span><ArrowIcon /></a>
     </section>

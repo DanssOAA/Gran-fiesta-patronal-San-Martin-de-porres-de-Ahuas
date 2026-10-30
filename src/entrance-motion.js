@@ -1,6 +1,6 @@
 const TARGETS = [
   '.cover-kicker', '.envelope', '.cover-title', '.cover-date',
-  '.hero-topline', '.saint-frame', '.patron-hero > .eyebrow', '.patron-hero h1',
+  '.hero-topline', '.hero-organization', '.saint-frame', '.patron-hero > .eyebrow', '.patron-hero h1',
   '.hero-description', '.floral-ornament', '.hero-date',
   '.music-instruction', '.music-player', '.music-credit', '.scroll-cue',
   '.section-heading > .eyebrow', '.section-heading > h2',
