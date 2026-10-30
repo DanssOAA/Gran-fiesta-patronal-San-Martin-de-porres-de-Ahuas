@@ -52,7 +52,7 @@ function EventDates({ className }) {
 }
 
 function OrganizationName() {
-  return <><span className="organization-name">San Martin <span className="organization-break">de Porres</span></span><span className="organization-origin">de Ahuas</span></>
+  return fiesta.organization
 }
 
 function useMusic() {
@@ -131,7 +131,7 @@ function Cover({ onOpen, opening }) {
       <p className="cover-kicker">Ahuas · Gorgor · Cajatambo</p>
       <button className="envelope" onClick={onOpen} disabled={opening} aria-label="Abrir la invitación a la fiesta de San Martín de Porres">
         <span className="envelope-frame" />
-        <span className="envelope-topline"><span>Centro Social</span><strong><OrganizationName /></strong></span>
+        <span className="envelope-topline"><OrganizationName /></span>
         <span className="envelope-flap" />
         <span className="envelope-fold" />
         <span className="patron-seal"><img src={images.saint} width="931" height="1485" alt="" /></span>
@@ -169,7 +169,7 @@ function Invitation({ music, onHome }) {
     <section className="patron-hero" aria-labelledby="hero-title">
       <FestiveDetails />
       <p className="hero-topline">Gran Fiesta Patronal en Lima</p>
-      <p className="hero-organization"><span>Centro Social</span><strong><OrganizationName /></strong></p>
+      <p className="hero-organization"><OrganizationName /></p>
       <div className="saint-frame"><img src={images.saint} width="931" height="1485" alt="San Martin de Porres, rodeado de rosas y acompañado de los animales" fetchpriority="high" /></div>
       <p className="eyebrow">En honor a nuestro Santo Patrón</p>
       <h1 id="hero-title">San Martín <em>de Porres</em></h1>
@@ -234,8 +234,8 @@ function Invitation({ music, onHome }) {
     <section className="food section-pad" aria-label="Gastronomía de la fiesta">
       <SectionHeading eyebrow="Sabores de nuestra tierra">Para compartir<br /><em>en familia</em></SectionHeading>
       <div className="food-photos">
+        <Photo src={images.cuy} alt="Picante de cuy con arroz, fotografía del PDF" caption="Picante de Cuy al estilo Ahuasino" className="cuy-photo" />
         <Photo src={images.pollada} alt="Plato de pollada con papas y ensalada, fotografía del PDF" caption="Una deliciosa Pollada" />
-        <Photo src={images.cuy} alt="Picante de cuy con arroz, fotografía del PDF" caption="Picante de Cuy al estilo Ahuasino" />
       </div>
       <p className="photo-section-copy">{fiesta.drinks}</p>
     </section>
@@ -248,14 +248,12 @@ function Invitation({ music, onHome }) {
 
     <section className="music-tradition section-pad" aria-label="Nuestra música y celebración">
       <SectionHeading eyebrow="Nuestra fiesta estará amenizada por">Banda Orquesta<br /><em>Centro Musical Huanri</em></SectionHeading>
-      <Photo src={images.tradition} alt="Grupo de Negritos con vestimenta tradicional" className="negritos-photo" />
       <Photo src={images.band} alt="Integrantes de la Banda Orquesta Centro Musical Huanri con sus instrumentos" caption="Banda Orquesta Centro Musical Huanri" className="band-photo" />
     </section>
 
     <section className="location section-pad reveal" id="ubicacion" aria-label="Lugar de la celebración">
-      <SectionHeading eyebrow="Nos encontramos en Lima">Te esperamos</SectionHeading>
-      <p className="venue-name">{fiesta.venue}</p>
-      <address>{fiesta.address}</address>
+      <SectionHeading eyebrow="Nos encontramos en Lima">Te esperamos en</SectionHeading>
+      <address><span className="venue-name">{fiesta.venue}</span>{fiesta.address}</address>
       <a className="button button-burgundy" href={mapUrl} target="_blank" rel="noreferrer">Ver ubicación <ArrowIcon direction="right" /></a>
       {fiesta.rsvpUrl && <a className="button button-outline" href={fiesta.rsvpUrl} target="_blank" rel="noreferrer">Confirmar asistencia</a>}
     </section>

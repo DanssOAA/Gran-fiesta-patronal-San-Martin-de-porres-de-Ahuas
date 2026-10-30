@@ -8,7 +8,7 @@ const TARGETS = [
   '.date-pair > div', '.date-amp', '.countdown-copy', '.countdown > div',
   '.name-row', '.representative', '.program-date', '.program-events > li',
   '.pdf-photo', '.pdf-photo figcaption', '.photo-section-copy',
-  '.venue-name', '.location address', '.location > .button',
+  '.location address', '.location > .button',
   '.closing-copy > .eyebrow', '.closing-copy > h2',
   '.closing-copy > p:not(.eyebrow)', '.closing-copy > strong',
   '.footer > p', '.footer > button',

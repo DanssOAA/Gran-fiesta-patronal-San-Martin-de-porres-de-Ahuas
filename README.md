@@ -12,6 +12,8 @@ npm run preview
 
 La portada abre la invitación mediante `#invitacion`. La música comienza en **0:34**; pausar conserva la posición y al finalizar repite desde 0:34. Los botones laterales retroceden o adelantan diez segundos. Después de activar la música aparece un control flotante para pausarla desde cualquier sección.
 
+El nombre completo del Centro Social usa una sola tipografía y tamaño en cada encabezado. Las dos imágenes de San Martín se muestran enteras, con el nombre y los animales visibles. La sección gastronómica muestra primero el cuy a todo el ancho y después la pollada; la sección de la banda contiene únicamente su fotografía. En ubicación, «Te esperamos en» precede al nombre del local y la dirección, presentados juntos con el mismo tamaño y color.
+
 Las entradas se gestionan por elemento en `src/entrance-motion.js` y `src/motion.css`: títulos, adornos, fotografías, nombres, horarios y botones aparecen en secuencia al entrar en pantalla. La portada abre el sobre antes de pasar a la invitación; hay detalles decorativos flotantes, trazado de adornos y movimiento suave de los fondos. El movimiento continuo se pausa fuera de pantalla y se respeta la preferencia de movimiento reducido. Si no está disponible el observador del navegador, el contenido permanece visible.
 
 ## Contenido y personalización

@@ -22,23 +22,21 @@
   min-height: 0;
   padding: 28px 28px 24px;
 }
-.envelope-topline { position: relative; inset: auto; width: 100%; line-height: 1.3; letter-spacing: .035em; }
-.envelope-topline > span { display: block; font-size: clamp(16px, 2.2vw, 20px); font-weight: 400; }
-.envelope-topline > strong { display: block; margin-top: 7px; font-size: clamp(22px, 4.8vw, 30px); line-height: 1.17; font-weight: 700; }
-.organization-name, .organization-origin { display: block; }
-.organization-origin { margin-top: 2px; font-size: .9em; }
+.envelope-topline { position: relative; inset: auto; width: 100%; font-size: clamp(22px, 4.8vw, 30px); font-weight: 700; line-height: 1.3; letter-spacing: .035em; text-wrap: balance; }
 .envelope-flap { inset: 0 0 57%; clip-path: polygon(0 0, 100% 0, 50% 100%); background: linear-gradient(155deg, #cd176d, #b20a5b); }
 .envelope-fold { inset: 43% 0 0; }
 .patron-seal {
   position: relative;
   inset: auto;
   flex: 0 0 auto;
-  width: clamp(128px, 33vw, 156px);
-  height: clamp(128px, 33vw, 156px);
+  width: clamp(140px, 36vw, 170px);
+  height: auto;
+  border-radius: 12px;
   margin: 22px auto 18px;
   transform: none;
 }
-.patron-seal img { object-position: 50% 50%; }
+.patron-seal img { width: 100%; height: auto; object-fit: contain; object-position: center; border-radius: 4px; }
+.patron-seal::after { border-radius: inherit; }
 .envelope-caption { position: relative; inset: auto; width: 100%; margin: 0 0 10px; font-size: clamp(25px, 4vw, 32px); line-height: 1.25; }
 .envelope-action { position: relative; inset: auto; width: 100%; min-height: 38px; font-size: 12px; line-height: 1.5; letter-spacing: .12em; }
 .is-opening .patron-seal { transform: scale(.72); }
@@ -66,10 +64,9 @@
 .section-pad { padding-inline: clamp(24px, 5vw, 64px); }
 .patron-hero { padding-inline: clamp(20px, 4vw, 48px); }
 .hero-topline { font-size: 13px; letter-spacing: .15em; }
-.hero-organization { max-width: 620px; margin: 0 auto 28px; font-family: 'Tex Gyre Termes', Georgia, serif; color: var(--blue); line-height: 1.3; text-transform: uppercase; letter-spacing: .035em; }
-.hero-organization > span { display: block; margin-bottom: 6px; font-size: 16px; }
-.hero-organization > strong { display: block; font-size: clamp(23px, 4.8vw, 30px); }
-.saint-frame { width: clamp(250px, 68vw, 340px); max-width: 100%; }
+.hero-organization { max-width: 620px; margin: 0 auto 28px; font: 700 clamp(23px, 4.8vw, 30px)/1.3 'Tex Gyre Termes', Georgia, serif; color: var(--blue); text-transform: uppercase; letter-spacing: .035em; text-wrap: balance; }
+.saint-frame { width: clamp(250px, 68vw, 340px); max-width: 100%; border-radius: 12px; }
+.saint-frame img { height: auto; object-fit: contain; border-radius: 4px; }
 .patron-hero .eyebrow { font-size: 11px; letter-spacing: .13em; }
 .hero-description { font-size: 17px; }
 .date-pair { gap: clamp(8px, 2.5vw, 28px); }
@@ -85,17 +82,24 @@
 .closing-copy > p:not(.eyebrow) { font-size: 18px; }
 .footer { font-size: 11px; }
 
+/* Fotos completas: el cuy ocupa la primera fila y no se amplía dentro del recorte. */
+.food-photos { grid-template-columns: minmax(0, 1fr); max-width: 720px; margin-inline: auto; gap: 32px; }
+.food-photos .pdf-photo:last-child { margin-top: 0; }
+.food-photos .cuy-photo .photo-window { overflow: visible; }
+.food .food-photos .cuy-photo .photo-window img { height: auto; object-fit: contain; animation: none; transform: none; }
+.location address { color: #202020; }
+.location .venue-name { display: block; margin: 0; font: inherit; color: inherit; }
+
 @media (max-width: 760px) {
   .cover { padding: 28px 16px 38px; }
   .envelope { padding: 26px 20px 22px; }
   .envelope-frame { inset: 11px; }
-  .envelope-topline > span { font-size: 16px; }
-  .envelope-topline > strong { font-size: clamp(22px, 5.7vw, 28px); }
+  .envelope-topline { font-size: clamp(22px, 5.7vw, 28px); }
   .cover-kicker { font-size: 11px; }
   .envelope-action { font-size: 12px; }
   .cover-title em { display: block; margin: 5px 0 0; }
   .section-pad { padding-inline: 24px; }
-  .hero-organization > strong { font-size: 24px; }
+  .hero-organization { font-size: 24px; }
   .name-row dt { font-size: 15px; }
   .name-row dd { font-size: 14px; }
 }
@@ -106,8 +110,7 @@
   .patron-hero { padding-inline: 20px; }
   .hero-topline { font-size: 12px; letter-spacing: .12em; }
   .hero-organization { margin-bottom: 25px; }
-  .hero-organization > span { font-size: 15px; }
-  .hero-organization > strong { font-size: 23px; }
+  .hero-organization { font-size: 23px; }
   .hero-description { font-size: 16px; }
   .date-pair small { margin-top: 14px; font-size: 11px; }
   .date-amp { flex: 0 0 auto; font-size: 28px; }
@@ -132,9 +135,7 @@
   .cover { padding-inline: 14px; }
   .cover-kicker { font-size: 10px; letter-spacing: .1em; }
   .envelope { padding-inline: 17px; }
-  .envelope-topline { letter-spacing: .02em; }
-  .envelope-topline > strong { font-size: 22px; }
-  .organization-break { display: block; }
+  .envelope-topline { font-size: 22px; letter-spacing: .02em; }
   .section-pad, .patron-hero { padding-inline: 18px; }
   .music-player { gap: 4px; padding-right: 6px; }
   .music-player button { min-width: 44px; min-height: 44px; }
@@ -145,9 +146,8 @@
   .cover { padding-block: 18px 30px; }
   .cover-kicker { margin-bottom: 12px; font-size: 11px; }
   .envelope { padding-block: 22px 20px; }
-  .envelope-topline > span { font-size: 18px; }
-  .envelope-topline > strong { font-size: 27px; }
-  .patron-seal { width: 136px; height: 136px; margin-block: 16px 12px; }
+  .envelope-topline { font-size: 27px; }
+  .patron-seal { width: 148px; margin-block: 16px 12px; }
   .envelope-caption { font-size: 29px; margin-bottom: 6px; }
   .envelope-action { min-height: 32px; }
   .cover-title { margin: 16px 0 10px; font-size: 36px; }
