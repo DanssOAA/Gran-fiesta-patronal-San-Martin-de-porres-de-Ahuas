@@ -4,6 +4,7 @@ import { clampSeek, remainingTime } from './playback.js'
 import musicUrl from './upload/BANDA ORQUESTA CENTRO MUSICAL HUANRI - ABREME LA PUERTA OCROS ANCASH.mp3'
 import './fonts.css'
 import './patronal.css'
+import './folklore.css'
 
 const insideInvitation = () => window.location.hash !== '' && window.location.hash !== '#portada'
 

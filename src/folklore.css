@@ -1,0 +1,111 @@
+/* Paleta festiva inspirada en los trajes y tejidos de las fotos del cliente. */
+:root {
+  --fuchsia: #c01167;
+  --blue: #1746ae;
+  --green: #007344;
+  --yellow: #ffd43b;
+  --red: #c91a38;
+  --cream: #fff9e9;
+  --paper: #fff1bf;
+  --rose: #ffcee5;
+  --rose-light: #ffeaf3;
+  --burgundy: var(--fuchsia);
+  --wine: #173c8a;
+  --gold: #a95800;
+  --ink: #243851;
+  color: var(--ink);
+  background: var(--blue);
+}
+.site-shell { background: #123f94; }
+button:focus-visible, a:focus-visible { outline: 3px solid #1746ae; outline-offset: 3px; box-shadow: 0 0 0 6px #fff9e9; }
+.section-pad, .patron-hero, .footer { position: relative; }
+.section-pad::before, .patron-hero::before, .footer::before, .cover::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 24px;
+  background: url('/fiesta/cenefa-folklorica.svg') center / 180px 24px repeat-x;
+  pointer-events: none;
+}
+.cover::after { inset: auto 0 0; }
+.cover { background: var(--blue); }
+.cover-landscape { filter: saturate(1.12); }
+.cover-shade { background: linear-gradient(155deg, #103e94e3, #083b67cc 50%, #00563bdb); }
+.cover-kicker, .cover-date { color: #fff5d3; text-shadow: 0 1px 8px #062e58; }
+.cover-title { color: #fff9e9; text-shadow: 0 2px 15px #05387180; }
+.cover-title em { color: #ffe36a; }
+.cover-content > .floral-ornament { color: #ffe36a; }
+.envelope { border: 2px solid #ffd43b; background: linear-gradient(140deg, #e22b85, #ae0756); color: #fff9e9; box-shadow: 0 20px 55px #06234f66, inset 0 0 0 7px #ffd43b30; }
+.envelope:hover { box-shadow: 0 26px 60px #06234f80; }
+.envelope-frame { border-color: #ffe99b; }
+.envelope-topline { color: #fff9e9; text-shadow: 0 1px 3px #8e0040; }
+.envelope-flap { background: linear-gradient(155deg, #ef4c9b, #c01167); }
+.envelope-fold { background: linear-gradient(148deg, transparent 49.7%, #ffdf735c 50%, #b2085a 50.3%) left/50% 100% no-repeat, linear-gradient(-148deg, transparent 49.7%, #ffdf735c 50%, #d91678 50.3%) right/50% 100% no-repeat; }
+.patron-seal { border-color: #ffe68a; background: linear-gradient(130deg, #ffe991, #edb311, #fff2ad); box-shadow: 0 4px 14px #760b405c; }
+.envelope-caption { color: #ffeb8a; }
+.envelope-action { color: #fff9e9; }
+.patron-hero { background: radial-gradient(ellipse at 0 30%, #ff52b11a, transparent 58%), radial-gradient(ellipse at 100% 55%, #03a86e1a, transparent 58%), var(--cream); border-top: 0; padding-top: 68px; }
+.hero-topline { color: var(--green); }
+.saint-frame { border: 3px solid var(--blue); background: linear-gradient(135deg, #ffd43b, #eb2584 40%, #008751 75%, #ffd43b); box-shadow: 0 0 0 3px #ffd43b, 0 14px 34px #1746ae24; }
+.hero-description, .hero-date span { color: #34526c; }
+.hero-description strong { color: var(--green); }
+.hero-date { color: var(--blue); }
+.music-instruction { color: var(--fuchsia); }
+.music-player { border-color: #ffd43b; background: linear-gradient(145deg, #2369d6, #1746ae 60%, #103381); box-shadow: inset 0 0 0 3px #ffe87555, 0 5px 15px #1746ae24; }
+.music-player button { color: #ffea86; }
+.music-player .main-play { border-color: #ffe36a; background: linear-gradient(130deg, #ed2189, #b4095d); box-shadow: inset 0 0 0 3px #ffe87577; }
+.music-player button:hover { color: #fff9e9; }
+.music-divider { background: #ffe36a99; }
+.music-credit { color: #3d596f; }
+.scroll-cue { color: #315c77; }
+.welcome { color: #fff9e9; background: var(--fuchsia); border-color: #ffd43b; }
+.welcome .eyebrow, .welcome h2 em, .welcome .floral-ornament { color: #ffe36a; }
+.welcome h2 { color: #fff9e9; }
+.welcome-address { color: #ffe9a3; }
+.date-section { background: #fff0a8; }
+.date-pair > div:first-child strong { color: var(--fuchsia); }
+.date-pair > div:last-child strong { color: var(--blue); }
+.date-pair small, .countdown-copy { color: #43516b; }
+.date-amp { color: var(--green); }
+.countdown { border-color: #db930f; }
+.countdown strong { color: var(--blue); }
+.countdown > div:nth-child(even) strong { color: var(--fuchsia); }
+.countdown span { color: #465170; }
+.mayordomos { background: var(--green); color: #fff9e9; border-top: 0; }
+.mayordomos .eyebrow, .mayordomos h2 em, .mayordomos .floral-ornament { color: #ffe36a; }
+.mayordomos h2 { color: #fff9e9; }
+.mayordomos .name-row { border-color: #ffe99c66; }
+.mayordomos .name-row dd, .mayordomos .representative { color: #fff0b7; }
+.donors { background: #fff9ed; }
+.donors .name-row { border-color: #e9208133; }
+.donors .name-row dd { color: var(--fuchsia); }
+.program { color: #fff9e9; background: var(--blue); }
+.heading-light h2 { color: #fff9e9; }
+.heading-light .eyebrow, .heading-light .floral-ornament, .program-date, .program-time { color: #ffe36a; }
+.program-events, .program-events li { border-color: #ffe36a66; }
+.food { background: #ffe179; }
+.food h2 { color: var(--blue); }
+.pdf-photo { background: #fffdf2; border: 2px solid var(--fuchsia); box-shadow: 5px 5px 0 #ffd43b; }
+.pdf-photo figcaption { color: var(--blue); }
+.food .pdf-photo:first-child { border-color: var(--red); box-shadow: 5px 5px 0 var(--blue); }
+.food .pdf-photo:last-child { border-color: var(--green); box-shadow: 5px 5px 0 var(--fuchsia); }
+.photo-section-copy { color: #43516b; }
+.traditions { background: var(--cream); }
+.traditions .landscape-photo { border-color: var(--blue); }
+.traditions .pallas-photo { border-color: var(--fuchsia); box-shadow: 5px 5px 0 var(--green); }
+.music-tradition { background: var(--red); border-color: #ffd43b; }
+.music-tradition h2 { color: #fff9e9; }
+.music-tradition .eyebrow, .music-tradition h2 em, .music-tradition .floral-ornament { color: #ffe36a; }
+.music-tradition .pdf-photo { border-color: #ffe36a; box-shadow: 5px 5px 0 #9d0b29; }
+.location { background: #fff0a8; }
+.location h2 { color: var(--blue); }
+.venue-name { color: var(--fuchsia); }
+.button-burgundy { background: var(--fuchsia); color: #fff9e9; border-color: #ffe36a; box-shadow: 4px 4px 0 #ffd43b; }
+.button-burgundy:hover { background: #9f0751; }
+.closing-shade { background: linear-gradient(145deg, #143da8db, #004d4bdb 65%, #08356bf0); }
+.closing .eyebrow, .closing .floral-ornament, .closing h2 em, .closing strong { color: #ffe36a; }
+.footer { background: #005d42; color: #fff9e9; padding-top: 39px; }
+.footer button { color: #ffe36a; }
+.floating-music { border-color: #ffe36a; background: var(--fuchsia); color: #ffe36a; box-shadow: 0 5px 22px #173c8a40; }
+.skip-link { background: #fff9e9; color: var(--blue); }
+@media (max-width: 600px) { .patron-hero { padding-top: 57px; } .footer { padding-top: 35px; } }
