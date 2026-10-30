@@ -108,8 +108,10 @@ h2 em { color: var(--burgundy); font-weight: 400; }
 .program-date strong { display: block; font-family: 'Tex Gyre Termes', Georgia, serif; font-weight: 400; font-size: 84px; line-height: 1.05; }
 .program-events { padding: 0; margin: 0; list-style: none; border-top: 1px solid #e0b17b59; }
 .program-events li { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 20px; padding: 24px 0; border-bottom: 1px solid #e0b17b59; }
-.program-events time { color: #f0cb91; font-size: 18px; line-height: 1.4; font-variant-numeric: tabular-nums; }
-.program-events time span { display: block; font: 400 8px/1.8 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.program-time { color: #f0cb91; font-size: 18px; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.program-time time { font: inherit; color: inherit; }
+.program-time-end { display: block; white-space: nowrap; }
+.program-time-label { display: block; font: 400 8px/1.8 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
 .program-events p { margin: 0; font-size: 15px; line-height: 1.8; }
 .food { text-align: center; background: #f3e3d8; }
 .food-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start; }
@@ -202,7 +204,7 @@ h2 em { color: var(--burgundy); font-weight: 400; }
   .program-date strong { font-size: 56px; }
   .program-date > span { font-size: 18px; }
   .program-events li { grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding-block: 21px; }
-  .program-events time { font-size: 17px; }
+  .program-time { font-size: 17px; }
   .program-events p { font-size: 14px; line-height: 1.8; }
   .food-photos { grid-template-columns: 1fr; gap: 26px; }
   .food-photos .pdf-photo:last-child { margin-top: 0; }

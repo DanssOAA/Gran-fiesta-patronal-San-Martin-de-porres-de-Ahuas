@@ -37,8 +37,7 @@ export const fiesta = {
     ['Susana ROQUE VILLAREAL', 'S/. 100.00'],
     ['Rosario ZEVALLOS', 'S/. 100.00'],
     ['Henry VENTOCILLA FIGUEROA', 'Vaca Loca'],
-    ['Rosa ARCE UZURIAGA', 'Mayordomo de Misa'],
-    ['Bernabe ACOSTA', 'Mayordomo de Misa'],
+    ['Rosa ARCE UZURIAGA y esposo', 'Mayordomo de Misa'],
     ['Edgail BARRERA VENTOCILLA', 'Negritos de Ahuas'],
   ],
   program: [
@@ -49,6 +48,7 @@ export const fiesta = {
     {
       day: 'Domingo', date: '22', month: 'Noviembre', isoDate: '2026-11-22',
       events: [
+        ['08:00', 'Degustacion del rico Chocho Ahuasinio', '10:00'],
         ['11:00', 'Misa en honor a nuestro Santo Patron San Martin de porres.'],
         ['13:00', 'Entrada de la Banda Orquesta Centro Musical Huanri'],
         ['14:00', 'Presentacion de los Negritos de Ahuas'],

@@ -164,7 +164,7 @@ function Invitation({ music, onHome }) {
       <div className="date-pair">
         <div><p>Sábado</p><strong>21</strong><span>Noviembre</span><small>Novena · 20:00 horas</small></div>
         <span className="date-amp" aria-hidden="true">&amp;</span>
-        <div><p>Domingo</p><strong>22</strong><span>Noviembre</span><small>Misa · 11:00 horas</small></div>
+        <div><p>Domingo</p><strong>22</strong><span>Noviembre</span><small>Degustación · 08:00–10:00 horas<br />Misa · 11:00 horas</small></div>
       </div>
       <p className="countdown-copy">La cuenta regresiva ha comenzado…</p>
       <Countdown />
@@ -186,8 +186,12 @@ function Invitation({ music, onHome }) {
       <SectionHeading eyebrow="Fe, música y costumbres" light>Programación</SectionHeading>
       {fiesta.program.map((day) => <div className="program-day reveal" key={day.date}>
         <header className="program-date"><span>{day.day}</span><strong>{day.date}</strong><span>{day.month}</span></header>
-        <ol className="program-events">{day.events.map(([time, description]) => <li key={time}>
-          <time dateTime={`${day.isoDate}T${time}:00-05:00`}>{time}<span>horas</span></time>
+        <ol className="program-events">{day.events.map(([time, description, endTime]) => <li key={time}>
+          <div className="program-time">
+            <time dateTime={`${day.isoDate}T${time}:00-05:00`}>{time}</time>
+            {endTime && <span className="program-time-end">–<time dateTime={`${day.isoDate}T${endTime}:00-05:00`}>{endTime}</time></span>}
+            <span className="program-time-label">horas</span>
+          </div>
           <p>{description}</p>
         </li>)}</ol>
       </div>)}
