@@ -35,7 +35,7 @@ export function mountEntranceMotion(root) {
   if (preference?.matches) return () => {}
 
   const elements = [...root.querySelectorAll(TARGETS)]
-  const sections = root.matches('.cover') ? [root] : [...root.querySelectorAll('section')]
+  const sections = root.matches('.cover') ? [root] : [...root.querySelectorAll('section, .footer')]
   let entranceObserver
   let sectionObserver
   let disposed = false

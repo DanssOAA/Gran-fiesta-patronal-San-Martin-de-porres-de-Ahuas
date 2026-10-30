@@ -51,11 +51,19 @@
 .motion-ready .pdf-photo.motion-entered .photo-window img { animation: photo-focus 1.5s cubic-bezier(.16, 1, .3, 1) var(--motion-delay) backwards; }
 
 /* Slow decorative movement stops while its section is outside the viewport. */
+.section-pad::before, .patron-hero::before, .footer::before, .cover::after {
+  background-position: 0 0;
+  animation: textile-drift 18s linear infinite;
+  animation-play-state: paused;
+}
+.section-pad:nth-of-type(even)::before { animation-direction: reverse; }
+.section-pad.motion-in-view::before, .patron-hero.motion-in-view::before,
+.footer.motion-in-view::before, .cover.motion-in-view::after { animation-play-state: running; }
 .festive-details { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .festive-details i { position: absolute; width: 8px; height: 8px; background: #ffd43b; opacity: .65; animation: detail-drift var(--drift-duration, 9s) ease-in-out var(--drift-delay, 0s) infinite alternate; animation-play-state: paused; }
 .festive-details i:nth-child(3n + 1) { rotate: 45deg; background: #ed258b; }
 .festive-details i:nth-child(3n + 2) { border-radius: 50%; background: #00a671; }
-.festive-details i:nth-child(3n) { width: 5px; height: 15px; rotate: -20deg; }
+.festive-details i:nth-child(3n) { width: 5px; height: 26px; border-radius: 2px; rotate: -20deg; transform-origin: 50% 12%; animation-name: streamer-sway; }
 .cover .festive-details i { box-shadow: 0 0 12px #ffd43b30; }
 .motion-in-view > .festive-details i { animation-play-state: running; }
 .cover-landscape { transform-origin: center 65%; animation: landscape-breathe 22s ease-in-out infinite alternate; animation-play-state: paused; }
@@ -98,7 +106,17 @@
 @keyframes floral-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 @keyframes flower-bloom { from { opacity: 0; scale: .2; } to { opacity: 1; scale: 1; } }
 @keyframes photo-focus { from { transform: scale(1.1) translateY(8px); } to { transform: scale(1) translateY(0); } }
-@keyframes detail-drift { from { transform: translate3d(0, 10px, 0) rotate(-15deg); opacity: .35; } to { transform: translate3d(10px, -18px, 0) rotate(30deg); opacity: .75; } }
+@keyframes textile-drift { to { background-position: 180px 0; } }
+@keyframes detail-drift {
+  0% { transform: translate3d(-8px, 20px, 0) rotate(-24deg); opacity: .45; }
+  50% { transform: translate3d(12px, -7px, 0) rotate(12deg); opacity: .8; }
+  100% { transform: translate3d(-4px, -26px, 0) rotate(46deg); opacity: .6; }
+}
+@keyframes streamer-sway {
+  0% { transform: translate3d(-8px, 12px, 0) rotate(-32deg) scaleY(.85); }
+  50% { transform: translate3d(7px, -12px, 0) rotate(10deg) scaleY(1.12); }
+  100% { transform: translate3d(-2px, -24px, 0) rotate(38deg) scaleY(.9); }
+}
 @keyframes landscape-breathe { from { transform: scale(1.02); } to { transform: scale(1.1); } }
 @keyframes seal-ripple { 0% { scale: .92; opacity: .8; } 75%, 100% { scale: 1.25; opacity: 0; } }
 @keyframes scroll-invite { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
@@ -113,6 +131,7 @@
   .festive-details i { width: 6px; height: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .section-pad::before, .patron-hero::before, .footer::before, .cover::after { animation: none; }
   .motion-ready .motion-pending, .motion-ready .motion-entered { opacity: 1; translate: none; scale: none; rotate: none; filter: none; pointer-events: auto; }
   .festive-details { display: none; }
   .patron-seal::after, .saint-frame::after, .button::after { display: none; }
