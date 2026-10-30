@@ -1,6 +1,6 @@
-# Invitación digital
+# Fiesta Patronal de San Martín de Porres
 
-Estructura de la referencia de Minvitly implementada con React y Vite. Imágenes, tipografías, audio y video se sirven localmente.
+Invitación digital para el Centro Social San Martin de Porres de Ahuas, basada en el contenido y las ocho fotografías de `src/upload/GRAN FIESTA PATRONAL EN LIMA.pdf`. Conserva el acceso por portada, apertura de invitación, música, cuenta regresiva, programa, imágenes y cierre de la referencia inicial.
 
 ```sh
 npm run dev
@@ -8,14 +8,14 @@ npm run build
 npm run preview
 ```
 
-La portada abre la invitación mediante `#invitacion`. La música comienza en **0:34**; pausar conserva la posición y al finalizar repite desde 0:34. Los botones laterales retroceden o adelantan diez segundos. El video se reproduce sin sonido cuando entra en pantalla y se pausa al salir.
+La portada abre la invitación mediante `#invitacion`. La música comienza en **0:34**; pausar conserva la posición y al finalizar repite desde 0:34. Los botones laterales retroceden o adelantan diez segundos. Después de activar la música aparece un control flotante para pausarla desde cualquier sección.
 
-## Personalización pendiente
+## Contenido y personalización
 
-`src/event.js` centraliza fecha, inicio del audio, título, colores, formulario, video y sustituciones de imágenes y textos. `src/invitation.json` contiene las posiciones, proporciones, saltos de línea y recursos de todas las secciones: portada, presentación y música, anfitrión, fecha y cuenta regresiva, primera galería, cronograma y vestimenta, segunda galería, confirmación, video y cierre.
+`src/fiesta.js` contiene los textos del PDF, cinco mayordomos, la representante del Centro Social Huancapon, dieciséis donantes con sus aportes, y los ocho actos del programa. Se conservaron los nombres, importes y las grafías del documento. `src/Patronal.jsx` construye la portada y todas las secciones. `src/patronal.css` define la paleta crema, rosa, rojo y dorado inspirada en las fotografías del PDF.
 
-La fecha, textos e imágenes actuales son los de la referencia, a la espera del material del cliente. La fecha original ya pasó, por lo que el contador muestra cero. El botón de confirmación abre un aviso local; establecer `rsvpUrl` cuando se entregue el formulario o WhatsApp definitivo. No envía información ni lleva al formulario del evento original.
+El PDF no indica el año: se usa **2026** porque el 21 de noviembre cae sábado y el 22 domingo, tal como especifica la programación. La cuenta regresiva apunta al primer acto: sábado 21 a las 20:00, hora de Lima.
 
-Para sustituir imágenes, guardarlas en `public/cliente/` y asignar en `images` el id correspondiente de `invitation.json` con la ruta `/cliente/archivo.jpg`. Los textos se sustituyen en `text` usando los mismos ids. Las imágenes que incluyen texto, como el cronograma, también deben reemplazarse con el material del cliente.
+Las fotografías se extrajeron directamente del PDF y se guardaron en `public/fiesta/`. La ubicación abre una búsqueda de Google Maps con la dirección literal del documento; no se ha inventado un punto geográfico. El PDF no contiene teléfono, formulario de confirmación ni video. Si se proporciona una URL de confirmación, asignarla a `fiesta.rsvpUrl` para mostrar el botón correspondiente.
 
-Los archivos anteriores se conservaron en `.reference-backup/`.
+La implementación anterior se conserva en los archivos de referencia de `src/` y las copias de trabajo en `.reference-backup/`. Sus fotografías de aviación se archivaron fuera de `public/` para que no se incluyan en la nueva publicación.
